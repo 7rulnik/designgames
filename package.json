@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "designgames",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",
@@ -10,7 +10,6 @@
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-imagemin": "^0.8.0",
     "grunt-contrib-jade": "^0.14.0",
     "grunt-contrib-jshint": "^0.10.0",
