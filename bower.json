@@ -1,7 +1,8 @@
 {
-  "name": "test",
+  "name": "designgames",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.3.2",
+    "jquery": "~2.1.3"
   }
 }
