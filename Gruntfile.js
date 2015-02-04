@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['<%= config.app %>/jade/**/*.jade'],
-        tasks: ['newer:jade:app']
+        tasks: ['jade:app']
       },
       styles: {
         files: ['<%= config.app %>/styles/**/*.less'],
@@ -126,13 +126,13 @@ module.exports = function(grunt) {
       app: {
         options: {
           pretty: true,
-          data: {
-            development: true
-          }
+          // data: {
+          //   development: true
+          // }
         },
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/jade/',
+          cwd: '<%= config.app %>/jade/pages',
           src: ['**/*.jade'],
           dest: '.tmp',
           ext: '.html'
@@ -142,12 +142,12 @@ module.exports = function(grunt) {
         options: {
           pretty: true,
           data: {
-            development: false
+            production: true
           }
         },
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/jade/',
+          cwd: '<%= config.app %>/jade/pages',
           src: ['**/*.jade'],
           dest: '<%= config.dist %>/',
           ext: '.html'
@@ -186,10 +186,18 @@ module.exports = function(grunt) {
 
     // Automatically inject Bower components into the HTML file
     wiredep: {
-      app: {
-        ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
+      // ignorePath: /^\/|\.\.\//,
+      jade: {
+        ignorePath: '../../../',
+        src: ['<%= config.app %>/jade/**/*.jade'],
+        exclude: ['bower_components/jquery/dist/jquery.js',
+          'bower_components/bootstrap/dist/js/bootstrap.js'
+        ]
+      },
+      less: {
+        ignorePath: '../../',
+        src: ['<%= config.app %>/styles/**/*.less'],
+        exclude: ['bower_components/bootstrap']
       }
     },
 
