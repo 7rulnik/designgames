@@ -2,7 +2,9 @@ doctype
 html(lang="ru")
 	include ../partials/head.jade
 	body
-		include ../partials/navbar.jade
+		header.header
+			include ../partials/navbar.jade
+			block header
 		block content
 		include ../partials/footer.jade
 		if production

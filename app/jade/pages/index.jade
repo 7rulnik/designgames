@@ -1,33 +1,50 @@
 extends ../layout/default.jade
+block header
+	.container
+		.row
+			.col-xs-9
+				h2.header__title Ничего личного,<br>только дизайн.
+				.likely.likely-light
+					.twitter Твитнуть
+					.facebook Поделиться
+					//- .gplus Плюсануть
+					.vkontakte Поделиться
+			.col-xs-3
+				a.header__registration-link Регистрация команды
+				a.header__registration-link Войти в личный кабинет
+				p ОБОЖИ ОСТАЛОСЬ 18 ДНЕЙ
+		section.events.row
+			//- TODO
+			a.events__nearest-link Ближайшие события
+			.col-xs-3
+				date.events__date(datetime='2015-02-26')
+					|26
+					span.events__month 02
+				p Лекция «Золотая<br>цепь брендинга».
+			.col-xs-3
+				date.events__date(datetime='2015-03-01')
+					|01
+					span.events__month 03
+				p Закрытие<br>регистрации
+			.col-xs-3
+				date.events__date(datetime='2015-03-02')
+					|02
+					span.events__month 03
+				p Публикация<br>заданий 1 тура.
+			.col-xs-3
+				date.events__date(datetime='2015-03-09')
+					|09
+					span.events__month 03
+				p Публикация<br>результатов 1 тура.
 block content
-	section.into
-		.container
-			.row
-				.col-xs-9
-					h2 Ничего личного, только писюльки.
-					p ла ла лайкли
-				.col-xs-3
-					a Регистрация команды епта
-					a Личный-хуичный кабинет
-					p ОБОЖИ ОСТАЛОСЬ 18 ДНЕЙ
-			a Ближайшие события
-			.row
-				.col-xs-3
-					p 26 <small>02</small>
-				.col-xs-3
-					p 01 <small>03</small>
-				.col-xs-3
-					p 02 <small>03</small>
-				.col-xs-3
-					p 09 <small>03</small>
-
 	section.about
 		.container
 			.row
-				.col-xs-6 Игры Дизайнеров — Всероссийский чемпионат, созданный для молодых и амбициозных дизайнеров, разработчиков, маркетологов и рекламистов.
-				.col-xs-6 Основная задача — познакомить самых талантливых участников с потенциальными работодателями и представителями крупных компаний.
+				.col-xs-6 <strong>Игры Дизайнеров</strong> — Всероссийский чемпионат, созданный для молодых и амбициозных дизайнеров, разработчиков, маркетологов и рекламистов.
+				.col-xs-6 <strong>Основная задача</strong> — познакомить самых талантливых участников с потенциальными работодателями и представителями крупных компаний.
 	section.partners
 		.container
+			h2 Генеральные партнёры
 			.row
 				.col-xs-3
 					p лого
@@ -47,6 +64,7 @@ block content
 					p лого
 	section.champ
 		.container
+			h2 Чемпионат 2015
 			.row
 				.col-xs-2.
 					Собери
