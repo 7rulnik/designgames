@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         options: {
           middleware: function(connect) {
             return [
-              modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$ /index.html [L]']),
+              modRewrite(['!\\.html|\\.js|\\.jpg|\\.svg|\\.css|\\.png$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
               connect.static(config.app)
