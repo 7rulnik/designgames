@@ -37,11 +37,10 @@ block header
 					|12
 					span.events__month 03
 				p Лекция<br>«Прогрессивный джипег»».
-block content
 	section.about
 		.container
-			h3 Для кого проводится чемпионат?
-			p «Игры дизайнеров» созданы для молодых и амбициозных дизайнеров разных направлений, разработчиков,<br>маркетологов и рекламистов. Основная задача — познакомить участников с потенциальными<br>работодателями и представителями крупных компаний.
+			h3.about__title Для кого проводится чемпионат?
+			p.about__text «Игры дизайнеров» созданы для молодых и амбициозных дизайнеров разных направлений, разработчиков,<br>маркетологов и рекламистов. Основная задача — познакомить участников с потенциальными<br>работодателями и представителями крупных компаний.
 			.row
 				.about__item-number.col-xs-3
 					span.about__number 4
@@ -55,6 +54,7 @@ block content
 				.about__item-number.col-xs-3
 					span.about__number 100
 					span.about__number-text призов
+block content
 	//- section.partners
 		.container
 			h2 Генеральные партнёры
@@ -77,7 +77,7 @@ block content
 					p лого
 	section.champ
 		.container
-			h2 Чемпионат 2015
+			h2.champ__title Краткая программа
 			img(src="images/timeline.svg")
 			.row
 				.col-xs-2.
@@ -107,80 +107,39 @@ block content
 					получите опыт
 					и работу в крупной
 					компании.
-			h3 *Требования к командам:
-			ol
-				li В команде должно быть от 2-х до 4-х человек;
-				li Участникам должно быть не более 25 лет;
-				li Любая локация;
-				li Возможность приехать на финал чемпионата в СПб (иногородним участникам поможем с жильём).
-			a Ознакомиться со всеми правилами участия. (или пойти на хуй)
+			p.champ__text
+				span.champ__text--note * 
+				|Команда состоит из 2-4 человек. Возраст участников до 25 лет (включительно). Местонахождение неважно,<br>но в случае прохождения в финал, нужно приехать в Санкт-Петербург для защиты решения.<br>Иногородним участникам помогаем с размещением.
 	section.sections
 		.container.container--sections
+			img(src='/images/sections_icon.svg')
+			h3.sections__title Выбор остаётся за вами
+			p.sections__text Мы разделили чемпионат на 4 секции, для повышения качества работ.<br>Каждая команда выбирает ту секцию, в которой она наиболее сильна. Подробная информация<br>о заданиях и программе находится внутри каждого направления. 
 			.row
-				.sections__item.col-xs-6
+				.sections__item.sections__item--branding.col-xs-6
 					h3.sections__item-title Брендинг
-					p.section__item-about Секция для графических дизайнеров и маркетологов.
-					p Задание включают в себя области:
-					ol
-						li Бизнеса и управления;
-						li Маркетинга и аналитики;
-						li Разработки дизайна и креатива;
-						li Прототипирования и разработки носителей;
-						li Стратегии продвижения и рекламы.
-					a.sections__item-link Узнать подробнее о секции
-				.sections__item.col-xs-6
+					p.section__item-about  Секция для графических дизайнеров и маркетологов.
+					a.sections__item-link Подробнее о секции →
+					
+				.sections__item.sections__item--interface.col-xs-6
 					h3.sections__item-title Интерфейсы
 					p.section__item-about Секция для UI/UX дизайнеров, веб-дизайнеров и разработчиков.
-					p Задание включают в себя области:
-					ol
-						li Маркетинга и аналитики;
-						li Архитектуры сайта и прототипирования;
-						li Разработки дизайна;
-						li Вёрстки и программирования.
-					a.sections__item-link Узнать подробнее о секции
+					a.sections__item-link Подробнее о секции →
 				.clearfix
-				.sections__item.col-xs-6
+					
+				.sections__item.sections__item--architecture.col-xs-6
 					h3.sections__item-title Архитектура и интерьер
 					p.section__item-about Секция для архитекторов и маркетологов.
-					p Задание включают в себя области:
-					ol
-						li Маркетинга и аналитики в архитектуре/интерьере;
-						li Пространственной среды;
-						li Проектирования и архитектуры;
-						li Разработки чертежей и визуализации;
-						li Инженерии и строительства.
-					a.sections__item-link Узнать подробнее о секции
-				.sections__item.col-xs-6
+					a.sections__item-link Подробнее о секции →
+					
+				.sections__item.sections__item--costume.col-xs-6
 					h3.sections__item-title Дизайн костюма
 					p.section__item-about Секция для дизайнеров костюма и модельеров.
-					p Задание включают в себя области:
-					ol
-						li Бизнеса и управления;
-						li Маркетинга и аналитики;
-						li Архитектуры сайта и прототипирования;
-						li Разработки дизайна;
-						li Вёрстки и программирования.
-					a.sections__item-link Узнать подробнее о секции
-				.clearfix
-				.sections__item.col-xs-6
-					h3.sections__item-title Промышленный дизайн
-					p.section__item-about Секция для 3D-дизайнеров и маркетологов.
-					p Задание включают в себя области:
-					ol
-						li Маркетинга, аналитики и исследованиий;
-						li Генерации идей и создания эскизов;
-						li 3D моделирования и визуализации;
-						li Быстрого прототипирования;
-						li Электроники, оборудования, техники и инвентаря.
-					a.sections__item-link Узнать подробнее о секции
-				.sections__item.col-xs-6
-					blockquote
-						p «Отличная идея — собрать всех студентов-дизайнеров в одном месте и дать решать им реальные задачи из бизнеса. Мы почувствовали себя героями фильма «Кадры», где все думают над одним делом, предлагая свои варианты. Очень хорошо, что концепция чемпионата — игра, а не просто конкурс, это была действительно весёлая, динамичная и сложная игра».
-					footer — Зинаида Югай полуфиналист чемпионата 2014.
+					a.sections__item-link Подробнее о секции →
 	section.why
 		.container
 			.row
-				.col-xs-7
+				.col-xs-6
 					h4 Единомышленники
 					p Чемпионат ежегодно собирает молодых дизайнеров, разработчиков и маркетологов со всей страны в одном 					месте. Новые и полезные знакомства обеспечены.
 					
@@ -209,7 +168,28 @@ block content
 						br
 						a info@designgames.ru
 					a.why__registration-link Зарегистрировать команду
-	section.gallery
+	section.partners.text-center
+		.container
+			h3 Генеральные партнёры
+			.row
+				.col-md-3
+					img(src='/images/logo/logo_coca-cola.svg')
+				.col-md-3
+					img(src='/images/logo/logo_netologiya.svg')
+				.col-md-3
+					img(src='/images/logo/logo_yota.svg')
+				.col-md-3
+					img(src='/images/logo/logo_microsoft.svg')
+				.clearfix
+				.col-md-3
+					img(src='/images/logo/logo_veeam.png')
+				.col-md-3
+					img(src='../../images/logo/logo_rostelekom.png')
+				.col-md-3
+					img(src='../../images/logo/logo_ikra.svg')
+				.col-md-3
+					img(src='../../images/logo/logo_medi.png')
+	sectio.gallery
 		.container.container--gallery
 			.row
 				.col-xs-4: img(src='http://placehold.it/350x150')
