@@ -2,6 +2,13 @@ if production
 	script(src='//yastatic.net/jquery/2.1.3/jquery.min.js')
 else 
 	script(src='bower_components/jquery/dist/jquery.js')
-script(src='/scripts/likely.js')
+// build:js(app) /scripts/likely.js
+// endbuild
 // bower:js
+script(src='bower_components/jquery.countdown/dist/jquery.countdown.js')
+script(src='bower_components/jquery.countdown/dist/jquery.countdown.min.js')
+script(src='bower_components/slick.js/slick/slick.min.js')
 // endbower
+script(src='/scripts/likely.js')
+script(src='/scripts/timer.js')
+script(src='/scripts/heading-slider.js')
