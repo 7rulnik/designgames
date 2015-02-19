@@ -7,13 +7,14 @@
   font-weight: 300;
   // border-bottom: 1px solid #fff;
   &__logo {
-    background: url(../images/logo.svg) no-repeat;
+    background: url("../images/logo.svg") no-repeat;
     width: 56px;
     height: 36px;
     // height: 67px;
     display: block;
     float: left;
     margin-top: 15px;
+    margin-right: 55px;
   }
   // &__nav {
   // 	.nav;
@@ -23,14 +24,19 @@
 }
 .nav {
   .navbar-nav;
-  float: right !important;
+  /* float: right !important; */
   &__link {
     font-size: 14px;
     color: #fff;
-    padding-top: 24px !important;
-    padding-bottom: 19px !important;
+    padding: 22px 16px !important;
+    &:hover,
     &--active {
-    	border-bottom: 4px solid #c7a95f;
+      border-bottom: 4px solid #c7a95f;
+      color: #fff;
+      background: transparent !important;
+    }
+    &--active {
+      font-weight: 400;
     }
   }
 }

@@ -9,7 +9,7 @@ block header
 					.facebook Поделиться
 					//- .gplus Плюсануть
 					.vkontakte Поделиться
-			.col-xs-3
+			.header__registration.col-xs-3
 				a.header__registration-link Регистрация команды
 				a.header__registration-link Войти в личный кабинет
 				date.header__timer
@@ -40,7 +40,7 @@ block header
 	section.about
 		.container
 			h3.about__title Для кого проводится чемпионат?
-			p.about__text «Игры дизайнеров» созданы для молодых и амбициозных дизайнеров разных направлений, разработчиков,<br>маркетологов и рекламистов. Основная задача — познакомить участников с потенциальными<br>работодателями и представителями крупных компаний.
+			p.about__text «Игры дизайнеров» созданы для молодых и амбициозных дизайнеров, разработчиков, маркетологов<br>и рекламистов разных направлений. Основная задача — познакомить участников с потенциальными<br>работодателями и представителями крупных компаний. 
 			.row
 				.about__item-number.col-xs-3
 					span.about__number 4
@@ -78,35 +78,35 @@ block content
 	section.champ
 		.container
 			h2.champ__title Краткая программа
-			img(src="images/timeline.svg")
+			img.champ__timeline(src="images/timeline.svg")
 			.row
 				.col-xs-2.
 					Собери
-					и зарегистрируй
-					свою команду
-					до 1 марта.*
+					<br>и зарегистрируй
+					<br>свою команду*
+					<br>до 15 марта.
 				.col-xs-2.
 					Выберите секцию,
-					в которой будете
-					бороться.
+					<br>в которой будете
+					<br>бороться.
 				.col-xs-2.
 					Решайте реальные
-					клиентские
-					задачи.
+					<br>клиентские
+					<br>задачи.
 				.col-xs-2.
 					Прокачивайте
-					навыки во время
-					чемпионата.
+					<br>навыки во время
+					<br>чемпионата.
 				.col-xs-2.
 					Успешно
-					презентуйте
-					своё решение
-					на финале в СПб.
+					<br>презентуйте
+					<br>своё решение
+					<br>на финале в СПб.
 				.col-xs-2.
 					Станьте лучшими,
-					получите опыт
-					и работу в крупной
-					компании.
+					<br>получите опыт
+					<br>и работу в крупной
+					<br>компании.
 			p.champ__text
 				span.champ__text--note * 
 				|Команда состоит из 2-4 человек. Возраст участников до 25 лет (включительно). Местонахождение неважно,<br>но в случае прохождения в финал, нужно приехать в Санкт-Петербург для защиты решения.<br>Иногородним участникам помогаем с размещением.
@@ -118,23 +118,23 @@ block content
 			.row
 				.sections__item.sections__item--branding.col-xs-6
 					h3.sections__item-title Брендинг
-					p.section__item-about  Секция для графических дизайнеров и маркетологов.
+					p.sections__item-about  Секция для графических дизайнеров и маркетологов.
 					a.sections__item-link Подробнее о секции →
 					
 				.sections__item.sections__item--interface.col-xs-6
 					h3.sections__item-title Интерфейсы
-					p.section__item-about Секция для UI/UX дизайнеров, веб-дизайнеров и разработчиков.
+					p.sections__item-about Секция для UI/UX дизайнеров, веб-дизайнеров и разработчиков.
 					a.sections__item-link Подробнее о секции →
 				.clearfix
 					
 				.sections__item.sections__item--architecture.col-xs-6
 					h3.sections__item-title Архитектура и интерьер
-					p.section__item-about Секция для архитекторов и маркетологов.
+					p.sections__item-about Секция для архитекторов и маркетологов.
 					a.sections__item-link Подробнее о секции →
 					
 				.sections__item.sections__item--costume.col-xs-6
 					h3.sections__item-title Дизайн костюма
-					p.section__item-about Секция для дизайнеров костюма и модельеров.
+					p.sections__item-about Секция для дизайнеров костюма и модельеров.
 					a.sections__item-link Подробнее о секции →
 	section.why
 		.container
@@ -168,28 +168,28 @@ block content
 						br
 						a info@designgames.ru
 					a.why__registration-link Зарегистрировать команду
-	section.partners.text-center
+	section.partners
 		.container
 			h3 Генеральные партнёры
 			.row
 				.col-md-3
-					img(src='/images/logo/logo_coca-cola.svg')
+					a: img.partners__logo(src='/images/logo/logo_coca-cola.svg')
 				.col-md-3
-					img(src='/images/logo/logo_netologiya.svg')
+					a: img.partners__logo(src='/images/logo/logo_netologiya.svg')
 				.col-md-3
-					img(src='/images/logo/logo_yota.svg')
+					a: img.partners__logo(src='/images/logo/logo_yota.svg')
 				.col-md-3
-					img(src='/images/logo/logo_microsoft.svg')
+					a: img.partners__logo(src='/images/logo/logo_microsoft.svg')
 				.clearfix
 				.col-md-3
-					img(src='/images/logo/logo_veeam.png')
+					a: img.partners__logo(src='/images/logo/logo_veeam.png')
 				.col-md-3
-					img(src='../../images/logo/logo_rostelekom.png')
+					a: img.partners__logo(src='../../images/logo/logo_rostelekom.png')
 				.col-md-3
-					img(src='../../images/logo/logo_ikra.svg')
+					a: img.partners__logo(src='../../images/logo/logo_ikra.svg')
 				.col-md-3
-					img(src='../../images/logo/logo_medi.png')
-	sectio.gallery
+					a: img.partners__logo(src='../../images/logo/logo_medi.png')
+	//- sectio.gallery
 		.container.container--gallery
 			.row
 				.col-xs-4: img(src='http://placehold.it/350x150')
