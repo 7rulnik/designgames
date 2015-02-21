@@ -1,51 +1,29 @@
 footer.footer
   .container
-    .row
-      .col-xs-2
-        p Чемпионат 2015
-        ul
-          li Участники
-          li Зрителям
-          li Работодателям
-          li Партнёры
-          li Контакты
-      .col-xs-2
-        p Секции
-        ul
-          li Брендинг
-          li Интерфейсы
-          li Архитектура и&nbsp;инетерьер
-          li Дизайн костюма
-          li Промышленный дизайн
-      .col-xs-2
-        p Результаты
-        ul
-          li Брендинг
-          li Интерфейсы
-          li Архитектура и&nbsp;инетерьер
-          li Дизайн костюма
-          li Промышленный дизайн
-      .col-xs-6
-        p
-          |Подписывйтесь,
-          br
-          |чтобы быть в курсе последних новостей:
-          br
-          a Вконтакте
-          a Twitter
-          a Instagram
-        form
-          input(type="email" placeholder="Ваш e-mail для получения новостей")
-          submit Подписаться
-    .row
-      .col-xs-6
-        br
-        p © Игры Дизайнеров, 2013—2015
-      .col-xs-6
-        p
-          |По всем вопросам сотрудничества пишите на:
-          br
-          a grigoriy.y@designgames.ru
+    .col-xs-4
+      h4.footer__title Контакты
+      p
+        |По организационным вопросам 
+        a info@designgames.ru
+      
+      p
+        |По вопросам сотрудничества 
+        a grigoriy.y@designgames.ru
+      
+      p © Игры Дизайнеров, 2013—2015
+      
+      p
+        |Дизайн сайта: 
+        a uvarovivan.ru
+        |<br>Текст: 
+        a indialogue.ru
+    .col-xs-4
+      h4.footer__title Мы в Вконтакте
+      include vk.jade
+    .col-xs-4
+      h4.footer__title Полезная рассылка
+      p Оставь почту, чтобы первым<br>узнать о новых лекциях, вакансиях<br>и новостях. Без спама.
+      input.form-control
         
         
         
