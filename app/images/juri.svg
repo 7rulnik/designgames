@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>photo 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Секции_брендинг-(дизайн)" sketch:type="MSArtboardGroup" transform="translate(-788.000000, -4206.000000)">
+            <g id="7_block" sketch:type="MSLayerGroup" transform="translate(0.000000, 3956.000000)">
+                <g id="2" transform="translate(772.000000, 250.000000)">
+                    <g id="photo-6" transform="translate(16.000000, 0.000000)">
+                        <mask id="mask-2" sketch:name="Mask" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#EEEEEE" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                        <path d="M69.162,41.525868 C69.076,40.5588626 68.238,39.8702064 67.322,40.020721 C63.838,40.593914 55.67,43.9176083 50,43.9176083 C44.33,43.9176083 36.162,40.593914 32.678,40.020721 C31.762,39.8702064 30.926,40.5568008 30.838,41.5238061 C30.554,44.6825528 30,53.0928189 30,54.3670392 C30,56.0783706 36.944,60 42,60 C46.904,60 47.9,54.3670392 50,54.3670392 C52.1,54.3670392 53.096,60 58,60 C63.056,60 70,56.0783706 70,54.3670392 C70,53.0928189 69.446,44.6825528 69.162,41.525868 L69.162,41.525868 Z M45.32,51.587672 C44.614,52.2433388 42.65,53.7938463 40.258,53.3093127 C37.866,52.8247791 36.42,50.5814916 35.926,49.684589 C35.806,49.4660334 35.844,49.1897462 36.014,49.0309841 C36.72,48.3753174 38.684,46.8248099 41.078,47.3093435 C43.47,47.793877 44.916,50.0371645 45.41,50.9340671 C45.528,51.1526227 45.49,51.4289099 45.32,51.587672 L45.32,51.587672 Z M64.074,49.684589 C63.582,50.5835535 62.136,52.8247791 59.742,53.3093127 C57.35,53.7938463 55.384,52.2433388 54.68,51.587672 C54.508,51.4289099 54.472,51.1526227 54.59,50.9340671 C55.082,50.0351027 56.528,47.793877 58.922,47.3093435 C61.314,46.8248099 63.28,48.3753174 63.984,49.0309841 C64.156,49.1897462 64.194,49.4660334 64.074,49.684589 L64.074,49.684589 Z" id="Shape" fill="#252525" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

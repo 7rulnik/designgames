@@ -1,0 +1,141 @@
+.contacts {
+  background: #1f1f1f;
+  color: #fff;
+  padding-top: 123px;
+  a {
+    color: #c7a95f;
+    text-decoration: underline;
+    font-weight: 400;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  &__form {
+    padding-top: 18px;
+    padding-left: 43px;
+    &-about {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  &__input {
+    border: 0;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    background: transparent;
+    color: #7b7b7b;
+    outline: 0;
+    font-size: 16px;
+    width: 447px;
+    padding-left: 0;
+    padding-bottom: 4px;
+    .placeholder(#4b4b4b);
+    & + & {
+      margin-top: 31px;
+    }
+    &:focus {
+      color: #fff;
+      border-bottom: 2px solid #c7a95f;
+    }
+    &--error {
+      color: #d0021b;
+      border-bottom: 2px solid #d0021b;
+    }
+    &--success {
+      color: #83c064;
+      border-bottom: 2px solid #83c064;
+    }
+  }
+  &__submit {
+    width: 201px;
+    height: 58px;
+    margin-top: 31px;
+    border: 2px solid #c7a95f;
+    background: transparent;
+    /* ОТПРАВИТЬ ПИСЬМО: */
+    font-weight: 500;
+    font-size: 14px;
+    color: #c7a95f;
+    display: inline-block;
+    /* float: left; */
+    .text-uppercase;
+    /* line-height: 16px; */
+    &:hover {
+      color: #fff;
+      background: #c7a95f;
+      border: 2px solid #b89b54;
+    }
+    &[disabled] {
+      opacity: 0.35;
+      &:hover {
+        color: #c7a95f;
+        background: transparent;
+        border: 2px solid #c7a95f;
+      }
+    }
+    &-message {
+      color: #83c064;
+      margin-left: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__row {
+    margin-bottom: 74px;
+  }
+  &__page-title {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__email {
+    font-size: 16px;
+  }
+  &__email + &__email {
+    margin-top: 28px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 35px;
+    &--margin-top {
+      margin-top: 75px;
+    }
+  }
+  &__item {
+    float: left;
+    width: 299px;
+    height: 307px;
+    border: 2px solid #3b3b3b;
+    padding-top: 45px;
+    .text-center;
+    &--padding {
+      padding-top: 70px;
+    }
+    &--row {
+      border-top: 0;
+    }
+    & + & {
+      border-left: 0;
+    }
+    img {
+      .center-block;
+      /* margin-top: 66px; */
+      margin-bottom: 12px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #c7a95f;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

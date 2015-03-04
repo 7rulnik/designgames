@@ -1,0 +1,21 @@
+section.registration
+  .container
+    p.registration__timer
+    p.registration__timer-text до конца регистрации команд.
+    
+    p.registration__text 
+      |Чтобы принять участие в чемпионате, собери команду из 3-4 человек<br>и зарегистрируй её до 15 марта. Не забывай о 
+      a(href='/doc/reglament.pdf' target='_blank') правилах
+      |.
+    p.registration__text
+      |Если у тебя не получилось найти команду, то не расстраивайся:<br>собрать достойную команду единомышленников можно в 
+      if branding
+        a(href='https://vk.com/topic-49101258_31670096' target='_blank') нашей группе ВКонтакте
+      else if architecture
+        a(href='https://vk.com/topic-49101258_31670112' target='_blank') нашей группе ВКонтакте
+      else if interface
+        a(href='https://vk.com/topic-49101258_31670104' target='_blank') нашей группе ВКонтакте
+      else if costume
+        a(href='https://vk.com/topic-49101258_29604544' target='_blank') нашей группе ВКонтакте
+      |.
+    a.registration__btn(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду

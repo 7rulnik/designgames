@@ -1,10 +1,9 @@
+block var
 doctype
-html(lang="ru")
+html(lang="ru" prefix='og: http://ogp.me/ns#')
 	include ../partials/head.jade
 	body
-		header.header
-			include ../partials/navbar.jade
-			block header
+		block header
 		block content
 		include ../partials/footer.jade
 		if production

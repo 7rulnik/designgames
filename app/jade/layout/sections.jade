@@ -1,0 +1,16 @@
+extends ./default.jade
+block content
+	include ../partials/stage.jade
+	section.program
+		.container
+			block calendar-title
+				h3 Программа секции «Интерфейсы»
+			include ../partials/calendar.jade
+	include ../partials/reviews.jade
+	include ../partials/prizes.jade
+	include ../partials/juri.jade
+	include ../partials/curator.jade
+	include ../partials/registration.jade
+	section.sections--links
+		.container
+			block sections

@@ -1,0 +1,134 @@
+block var
+	- var title = 'Секция «Интерфейсы»'
+	- var interface = true
+extends ../../layout/sections.jade
+block header
+	header.header.header--section.header--interface
+		include ../../partials/navbar.jade
+		.container
+			.row
+				.col-xs-9
+					h2.header__title Секция<br>Интерфейсы
+					.likely.likely-light
+						.twitter Твитнуть
+						.facebook Поделиться
+						//- .gplus Плюсануть
+						.vkontakte Поделиться
+				include ../../partials/header-registration.jade
+			//- include ../partials/events.jade
+		section.about.about--section
+			.container
+				p.about__text Пришло время избавить мир от ужасных сайтов и неудобных приложений. В твоих руках<br>будущее пользователей. Предложи то, в чём разберётся даже прабабушка из Кемерово.<br>Взорви конверсию с помощью свежих идей. Секция «Интерфейсы» ждёт тебя!
+				.about__icon
+					img(src='/images/icons/interface/1.svg')
+					p.about__icon-text Бизнес<br>и управление
+				.about__icon
+					img(src='/images/icons/interface/2.svg')
+					p.about__icon-text Маркетинг<br>и аналитика
+				.about__icon
+					img(src='/images/icons/interface/3.svg')
+					p.about__icon-text Архитектура сайта<br>и прототипирование
+				.about__icon
+					img(src='/images/icons/interface/4.svg')
+					p.about__icon-text Разработка<br>дизайна
+				.about__icon
+					img(src='/images/icons/interface/5.svg')
+					p.about__icon-text Вёрстка<br>и программирование
+				//- .row.about__number-container
+					.about__item-number.col-xs-3
+						span.about__number 4
+						span.about__number-text секции
+					.about__item-number.col-xs-3
+						span.about__number 800
+							span.about__plus +
+						span.about__number-text участников со страны
+					.about__item-number.col-xs-3
+						span.about__number 100
+							span.about__plus +
+						span.about__number-text призов от парнёров
+					.about__item-number.col-xs-3
+						span.about__number 50
+							span.about__plus +
+						span.about__number-text работодателей
+						
+block tab-first-stage
+	a(href='http://1.kuka.pro/' target='_blank'): img.tab-pane__img(src='/images/logo/sections/logo_kuka.svg')
+	.tab-pane__text
+		p.tab-pane__date 16 — 22 марта 2015
+		p.tab-pane__about 1-й этап проходит заочно.<br>Вам предстоит решить задание<br>от компании <a class='tab-pane__link' href='http://1.kuka.pro/' target='_blank'>Кузница Кадров</a> за 7 дней.<br>Лучшие команды пройдут во 2-й этап<br>и поборются за прохождение в финал.
+		hr.tab-pane__separator
+		p.tab-pane__about
+			.tab-pane__link-container
+				a.tab-pane__link(href='https://drive.google.com/folderview?id=0B61TtHqP5CkSSVQ3R3N6cks0b0E&usp=docslist_api&ddrp=1#' target='_blank') Пример задания
+				|  для секции «Интерфейсы»
+				//- p.tab-pane__about
+				br
+				a.tab-pane__link(href='https://docs.google.com/file/d/0B2COchAXouRGaUdVcHAtZnhIMkk/edit' target='_blank') Решение задания
+				|  от победителя 2014 года
+block tab-second-stage
+	a(href='http://fb.com/artw.ru' target='_blank'): img.tab-pane__img(src='/images/logo/sections/logo_artw.svg')
+	.tab-pane__text
+		p.tab-pane__date 24 — 30 марта 2015
+		p.tab-pane__about 2-й этап проходит заочно.<br>Вам предстоит решить задание<br>от агентства <a class='tab-pane__link' href='http://artw.ru/' target='_blank'>ARTW</a> за 7 дней.<br>Лучшие команды пройдут в финал<br>и презентуют решение перед жюри.
+		hr.tab-pane__separator
+		p.tab-pane__about
+			.tab-pane__link-container
+				a.tab-pane__link(href='https://drive.google.com/folderview?id=0B61TtHqP5CkSSVQ3R3N6cks0b0E&usp=docslist_api&ddrp=1#' target='_blank') Пример задания
+				|  для секции «Интерфейсы»
+				//- p.tab-pane__about
+				br
+				a.tab-pane__link(href='https://docs.google.com/file/d/0B2COchAXouRGaUdVcHAtZnhIMkk/edit' target='_blank') Решение задания
+				|  от победителя 2014 года
+block tab-third-stage
+	a(href='http://microsoft.com/ru-ru/default.aspx' target='_blank'): img.tab-pane__img(src='/images/logo/sections/logo_microsoft.svg')
+	.tab-pane__text
+		p.tab-pane__date 9 апреля 2015
+		p.tab-pane__about 3-й этап проходит очно<br>в Санкт-Петербурге. Вам предстоит<br>решить задание от компании <a class='tab-pane__link' href='http://microsoft.com/ru-ru/default.aspx' target='_blank'>Microsoft</a><br>за 5 часов и презентовать его перед<br>жюри.
+		hr.tab-pane__separator
+		p.tab-pane__about
+			.tab-pane__link-container
+				a.tab-pane__link(href='https://drive.google.com/folderview?id=0B61TtHqP5CkSSVQ3R3N6cks0b0E&usp=docslist_api&ddrp=1#' target='_blank') Пример задания
+				|  для секции «Интерфейсы»
+				//- p.tab-pane__about
+				br
+				a.tab-pane__link(href='https://docs.google.com/file/d/0B2COchAXouRGaUdVcHAtZnhIMkk/edit' target='_blank') Решение задания
+				|  от победителя 2014 года
+
+
+block calendar-title
+	h3.program__title Программа секции «Интерфейсы»
+block calendar-final
+	td 8
+	td.calendar__final
+		date.calendar__date(datetime='2015-04-09') 9 апреля
+		p.calendar__event Решение очного задания в СПб. Финал.
+		i.calendar__marker.calendar__marker--start 0
+		i.calendar__marker.calendar__marker--end 1
+	td 10
+	td 11
+
+block curator-person
+	img.curator__img(src='/images/people/5.png')
+	.curator__who
+		p.curator__name Иван Замечательный
+		a.curator__email(href='mailto: ivan.u@designgames.ru') ivan.u@designgames.ru
+	
+
+block sections
+	.row
+		a.sections__item.sections__item--branding.sections__item--fluid.col-xs-6(href='/sections/branding.html')
+			h3.sections__item-title Брендинг
+			p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		//- a.sections__item.sections__item--interface.sections__item--fluid.col-xs-6(href='interface.html')
+			h3.sections__item-title Интерфейсы
+			p.sections__item-about Секция для проектировщиков, веб-дизайнеров и разработчиков.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		a.sections__item.sections__item--architecture.sections__item--fluid.col-xs-6(href='/sections/architecture.html')
+			h3.sections__item-title Архитектура и интерьер
+			p.sections__item-about Секция для архитекторов и&nbsp;дизайнеров интерьера.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		a.sections__item.sections__item--costume.sections__item--fluid.col-xs-6(href='/sections/costume.html')
+			h3.sections__item-title Дизайн костюма
+			p.sections__item-about Секция для дизайнеров костюма и&nbsp;стилистов.
+			p.sections__item-link <span>Подробнее о секции</span> →

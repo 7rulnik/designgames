@@ -1,0 +1,33 @@
+block var
+	- var title = 'Секции'
+	- var sections = true
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.sections.sections--single
+		.container
+			img(src='/images/sections_icon.svg')
+			h3.sections__title Выбор за тобой
+			p.sections__text Чувствуя тенденции современного мира, мы разделили чемпионат на 4 секции.<br>Выбери секцию, которая отражает твои навыки. Участие бесплатное.
+			.row
+				a.sections__item.sections__item--branding.col-xs-6(href='branding.html')
+					h3.sections__item-title Брендинг
+					p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+					p.sections__item-link <span>Подробнее о секции</span> →
+					
+				a.sections__item.sections__item--interface.col-xs-6(href='interface.html')
+					h3.sections__item-title Интерфейсы
+					p.sections__item-about Секция для проектировщиков, веб-дизайнеров и разработчиков.
+					p.sections__item-link <span>Подробнее о секции</span> →
+				.clearfix
+					
+				a.sections__item.sections__item--architecture.col-xs-6(href='architecture.html')
+					h3.sections__item-title Архитектура<br>и интерьер
+					p.sections__item-about Секция для архитекторов и дизайнеров интерьера.
+					p.sections__item-link <span>Подробнее о секции</span> →
+					
+				a.sections__item.sections__item--costume.col-xs-6(href='costume.html')
+					h3.sections__item-title Дизайн костюма
+					p.sections__item-about Секция для дизайнеров костюма и стилистов.
+					p.sections__item-link <span>Подробнее о секции</span> →

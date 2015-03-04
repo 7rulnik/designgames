@@ -1,0 +1,19 @@
+block var
+	- var title = 'Календарь событий чемпионата 2015'
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section
+		.container
+			h1 Календарь событий чемпионата 2015
+	include ../partials/calendar.jade
+block calendar-final
+	td 8
+	td 9
+	td 10
+	td.calendar__final
+		date.calendar__date(datetime='2015-02-23') 11 апреля
+		p.calendar__event Решение очного задания в СПб. Финал.
+		i.calendar__marker.calendar__marker--start 0
+		i.calendar__marker.calendar__marker--end 1

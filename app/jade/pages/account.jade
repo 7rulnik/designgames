@@ -1,0 +1,12 @@
+block var
+	- var title = 'Личный кабинет'
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section.soon
+		.container
+			img(src='/images/soon.svg')
+			p.soon__text Войти в личный кабинет можно будет через
+			p.soon__timer.soon__timer--account
+	

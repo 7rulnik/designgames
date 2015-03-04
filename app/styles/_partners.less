@@ -1,10 +1,59 @@
 .partners {
   .text-center;
+  padding-top: 23px;
+  padding-bottom: 80px;
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    color: #232323;
+    margin-bottom: 76px;
+  }
   &__logo {
-    opacity: .65;
+    opacity: 0.65;
+    position: relative;
+    &--second-row {
+      margin-top: 80px;
+    }
+    &--guild {
+      /* top: -1px; */
+      left: 1px;
+    }
+    &--microsoft {
+      left: 1px;
+      /* top: -1px; */
+    }
+    &--coca-cola {
+      /* top: 3px; */
+      top: 1px;
+      left: 1px;
+    }
+    &--td {
+      left: 1px;
+      /* top: -1px; */
+    }
+    &--veeam,
+    &--kuka,
+    &--artw {
+      /* left: -10px; */
+      top: -1px;
+    }
+    &--kuka,
+    &--artw {
+      left: -1px;
+    }
+    &--ikra {
+      left: -3px;
+      top: -2px;
+    }
     &:hover {
       opacity: 1;
       /* cursor: pointer; */
     }
+  }
+  a + a .partners__logo {
+    margin-left: 92px;
+  }
+  a + a .partners__logo--second-row {
+    margin-left: 84px;
   }
 }

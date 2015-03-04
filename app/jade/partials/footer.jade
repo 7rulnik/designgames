@@ -1,29 +1,25 @@
 footer.footer
   .container
     .col-xs-4
-      h4.footer__title Контакты
-      p
-        |По организационным вопросам 
-        a info@designgames.ru
+      include ../partials/footer-contacts.jade
       
-      p
-        |По вопросам сотрудничества 
-        a grigoriy.y@designgames.ru
+      p.footer__copyright © Игры дизайнеров, 2013—2015
       
-      p © Игры Дизайнеров, 2013—2015
-      
-      p
-        |Дизайн сайта: 
-        a uvarovivan.ru
-        |<br>Текст: 
-        a indialogue.ru
-    .col-xs-4
-      h4.footer__title Мы в Вконтакте
+    .footer__vk.col-xs-4
+      h4.footer__title.footer__title--vk Мы в ВКонтакте
       include vk.jade
-    .col-xs-4
+    .col-xs-4.footer__subscribe
       h4.footer__title Полезная рассылка
-      p Оставь почту, чтобы первым<br>узнать о новых лекциях, вакансиях<br>и новостях. Без спама.
-      input.form-control
+      p Оставь почту, чтобы первым<br>узнать о новостях, лекциях<br>и вакансиях у лидеров рынка.<br>Без спама.
+      form.footer__form
+        input.contacts__input.footer__input(placeholder='Ваша почта')
+        input.footer__submit(type='submit' value)
+      .footer__we
+        a(href='http://gildfamily.ru/' target='_blank'): img.footer__we-img(src='/images/logo/logo_guild.svg')
+        p.footer__we-text
+          |Мы — самый крупный<br>независимый проект<br>компании 
+          a(href='http://gildfamily.ru/' target='_blank') «Гильдия»
+          |.
         
         
         

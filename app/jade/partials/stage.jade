@@ -1,0 +1,50 @@
+section.stage
+  .container
+    h3.stage__title Этапы чемпионата
+    ul.stage__nav(role='tablist')
+      li.active: a.stage__nav-link(href="#registration" aria-controls="registration" role='tab' data-toggle='tab') Регистрация
+      li: a.stage__nav-link(href="#first-stage" aria-controls="first-stage" role='tab' data-toggle='tab') I этап
+      li: a.stage__nav-link(href="#second-stage" aria-controls="second-stage" role='tab' data-toggle='tab') II этап
+      li: a.stage__nav-link(href="#third-stage" aria-controls="third-stage" role='tab' data-toggle='tab') III этап
+    
+    .stage__tab-content
+      #registration.tab-pane.fade.in.active(role='tabpanel')
+        block tab-registration
+          img.tab-pane__img(src='/images/people.svg')
+          .tab-pane__text
+            p.tab-pane__date 26 февраля — 15 марта 2015
+            p.tab-pane__about Собери команду из 3-4 человек<br>и зарегистрируй её до 15 марта.<br>Регистрация и участие бесплатные,<br>местонахождение команды неважно.
+            hr.tab-pane__separator
+            a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+            br
+            a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+      #first-stage.tab-pane.fade(role='tabpanel')
+        block tab-first-stage
+          img.tab-pane__img(src='/images/mask.svg')
+          .tab-pane__text
+            p.tab-pane__date 16 — 22 марта 2015
+            p.tab-pane__about 1-й этап проходит заочно.<br>Вам предстоит решить задание<br>от компании-партнёра за 7 дней.<br>Лучшие команды пройдут во 2-й этап<br>и поборются за прохождение в финал.
+            hr.tab-pane__separator
+            a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+            br
+            a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+      #second-stage.tab-pane.fade(role='tabpanel')
+        block tab-second-stage
+          img.tab-pane__img(src='/images/mask.svg')
+          .tab-pane__text
+            p.tab-pane__date 24 — 30 марта 2015
+            p.tab-pane__about 2-й этап проходит заочно.<br>Вам предстоит решить задание<br>от компании-партнёра за 7 дней.<br>Лучшие команды пройдут в финал<br>и презентуют решение перед жюри.
+            hr.tab-pane__separator
+            a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+            br
+            a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+      #third-stage.tab-pane.fade(role='tabpanel')
+        block tab-third-stage
+          img.tab-pane__img(src='/images/mask.svg')
+          .tab-pane__text
+            p.tab-pane__date 9 апреля 2015
+            p.tab-pane__about 3-й этап проходит очно<br>в Санкт-Петербурге. Вам предстоит<br>решить задание от компании-партнёра<br>за 5 часов и презентовать его перед жюри.
+            hr.tab-pane__separator
+            a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+            br
+            a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата

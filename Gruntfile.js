@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
-  var modRewrite = require('connect-modrewrite');
+  // var modRewrite = require('connect-modrewrite');
   // Configurable paths
   var config = {
     app: 'app',
@@ -30,17 +30,17 @@ module.exports = function(grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wiredep']
-      },
-      js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
-        options: {
-          livereload: true
-        }
-      },
+    //   bower: {
+    //     files: ['bower.json'],
+    //     tasks: ['wiredep']
+    //   },
+      // js: {
+      //   files: ['<%= config.app %>/scripts/{,*/}*.js'],
+      //   tasks: ['jshint'],
+      //   options: {
+      //     livereload: true
+      //   }
+      // },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.app %>/{,*/}*.html',
+          '.tmp/**/*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         options: {
           middleware: function(connect) {
             return [
-              modRewrite(['!\\.html|\\.js|\\.jpg|\\.svg|\\.css|\\.png$ /index.html [L]']),
+              // modRewrite(['!\\.html|\\.js|\\.jpg|\\.svg|\\.css|\\.png$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
               connect.static(config.app)
@@ -272,9 +272,12 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/**/*.{webp,svg}',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'doc/**',
+            'static/**',
+            'scripts/**/*.php'
           ]
         }, {
           expand: true,
@@ -295,7 +298,7 @@ module.exports = function(grunt) {
       dist: [
         'less',
         'imagemin',
-        'svgmin'
+        // 'svgmin'
       ]
     }
   });
@@ -311,7 +314,7 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
+      // 'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -321,7 +324,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+    // 'wiredep',
     'jade:dist',
     'useminPrepare',
     'concurrent:dist',

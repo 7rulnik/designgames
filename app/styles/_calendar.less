@@ -1,0 +1,96 @@
+.program {
+  padding-top: 67px;
+  padding-bottom: 95px;
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    .text-center;
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+}
+.calendar {
+  width: 974px;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  td {
+    width: 140px;
+    border: 1px solid #eaeaea;
+  }
+  tbody {
+    td {
+      /* width: 140px; */
+      height: 144px;
+      vertical-align: top;
+      color: #d1d1d1;
+      font-weight: 300;
+      padding-top: 6px;
+      padding-left: 9px;
+      font-size: 13px;
+      position: relative;
+    }
+  }
+  &__weekday td {
+    height: 40px;
+    .text-center;
+    background: #f8f8f8;
+    /* vertical-align: middle; */
+    /* font-weight: 400; */
+    /* padding: 0; */
+    /* color: #000; */
+  }
+  &__date,
+  &__event {
+    color: #000;
+  }
+  &__date {
+    font-weight: 500;
+    &--month-begin {
+      font-weight: 400 !important;
+      color: #000 !important;
+    }
+  }
+  &__event {
+    padding-right: 23px;
+    margin-top: 6px;
+    line-height: 23px;
+  }
+  &__marker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-style: normal;
+    .text-center;
+    padding-top: 2px;
+    /* vertical-align: middle; */
+    top: -16px;
+    &--start {
+      left: -15px;
+    }
+    &--end {
+      right: -15px;
+    }
+  }
+  &__first-stage {
+    border-top: 2px solid #cd7f32 !important;
+    .calendar__marker {
+      background: #cd7f32;
+    }
+  }
+  &__second-stage {
+    border-top: 2px solid #c0c0c0 !important;
+    .calendar__marker {
+      background: #c0c0c0;
+    }
+  }
+  &__final {
+    border-top: 2px solid #c7a95f !important;
+    .calendar__marker {
+      background: #c7a95f;
+    }
+  }
+}

@@ -5,16 +5,41 @@
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, .11);
   font-weight: 300;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
   // border-bottom: 1px solid #fff;
+  &--scroll {
+    background: rgba(255, 255,255,.97);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    /* opacity: 0; */
+    .navbar__logo {
+      background: url("../images/logo-black.svg") no-repeat;
+    }
+    .nav__link {
+      color: #353535;
+      &:hover,
+      &--active {
+        color: #000;
+      }
+    }
+  }
+  /* border: 1px solid #ECECEC; */
   &__logo {
     background: url("../images/logo.svg") no-repeat;
-    width: 56px;
-    height: 36px;
+    width: 100px;
+    height: 30px;
     // height: 67px;
     display: block;
     float: left;
-    margin-top: 15px;
-    margin-right: 55px;
+    margin-top: 21px;
+    margin-right: 40px;
+    /* margin-right: 55px; */
   }
   // &__nav {
   // 	.nav;
@@ -24,11 +49,11 @@
 }
 .nav {
   .navbar-nav;
-  /* float: right !important; */
+  float: right !important;
   &__link {
     font-size: 14px;
-    color: #fff;
-    padding: 22px 16px !important;
+    color: #ececec;
+    padding: 24px 16px 20px !important;
     &:hover,
     &--active {
       border-bottom: 4px solid #c7a95f;

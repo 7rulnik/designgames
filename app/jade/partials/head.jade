@@ -1,11 +1,30 @@
 head
 	meta( charset="utf-8")
 	meta( http-equiv="X-UA-Compatible" content="IE=edge" )
-	title= pagetitle
+	if title
+		title #{title} — III Игры дизайнеров — Всероссийский чемпионат 2015
+	else
+		title III Игры дизайнеров — Всероссийский чемпионат 2015
 	meta( name="description", content="#{description}")
-	//- meta( name="viewport", content="width=device-width, initial-scale=1")
+	meta( name="viewport", content="width=1200")
 	//- meta(name="theme-color" content="#405c69")
 	link(href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=cyrillic,latin' rel='stylesheet' type='text/css')
 	// build:css(.tmp) /styles/main.css
 	link(rel='stylesheet', href='/styles/main.css')
 	// endbuild
+	
+	
+	
+	meta(name="twitter:card" content="summary_large_image")
+	//- meta(name="twitter:site" content="@your_twitter_account")
+	//- meta(name="twitter:creator" content="@your_twitter_account")
+	meta(name="twitter:title" content="Что такое «Игры дизайнеров»?")
+	meta(name="twitter:description" content="Игры дизайнеров» — это ежегодный командный чемпионат по разным направлениям дизайна на основе кейсов от ведущих компаний и агентств страны. Соревнования созданы для студентов и молодых специалистов: дизайнеров, разработчиков и маркетологов.")
+	meta(name="twitter:image:src" content="http://designgames.ru/static/og.png")
+	meta( property="og:title" content="III Игры дизайнеров")
+	meta( property="og:type" content="article")
+	//- meta( property="og:url" content="http://ССЫЛКА НА СТАТЬЮ/")
+	meta( property="og:image" content="http://designgames.ru/static/og.png")
+	meta( property="og:description" content="Открыта регистрация на чемпионат «III Игры дизайнеров». Докажи, что ты лучший и пройди стажировку у лидеров рынка — http://designgames.ru")
+	meta( property="og:site_name" content="III Игры дизайнеров")
+	

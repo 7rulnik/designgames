@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="85px" height="51px" viewBox="0 0 85 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Заглушка-для-верхнего-меню" sketch:type="MSArtboardGroup" transform="translate(-918.000000, -333.000000)" fill="#C7A95F">
+            <g id="1_block" sketch:type="MSLayerGroup" transform="translate(-2.000000, -2.000000)">
+                <g id="Информация-будет-опу-+-Shape" transform="translate(762.000000, 335.000000)" sketch:type="MSShapeGroup">
+                    <path d="M158,42.5 L158,48.8665 C158,50.04375 158.95625,51 160.1335,51 L164.37075,51 C165.54375,51 166.5,50.04375 166.5,48.8665 L166.5,42.5 C166.5,38.42425 169.90425,32.83975 175,30.68925 L175,21.743 C165.157,24.021 158,33.8725 158,42.5 L158,42.5 Z M209.27625,2.97925 L198.52375,11.04575 C197.049,12.15075 195.2555,12.75 193.411,12.75 L183.52125,12.75 C181.1625,12.75 179.25,14.6625 179.25,17.02125 L179.25,33.983 C179.25,36.3375 181.1625,38.25 183.52125,38.25 L193.411,38.25 C195.2555,38.25 197.049,38.84925 198.52375,39.95425 L209.2805,48.02075 C211.856,49.9545 214.9925,51 218.214,51 L226,51 L226,0 L218.214,0 C214.9925,0 211.856,1.0455 209.27625,2.97925 L209.27625,2.97925 Z M230.25,8.5 L230.25,17 L243,17 L243,8.5 L230.25,8.5 L230.25,8.5 Z M230.25,42.5 L243,42.5 L243,34 L230.25,34 L230.25,42.5 L230.25,42.5 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

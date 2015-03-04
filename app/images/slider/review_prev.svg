@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="35px" viewBox="0 0 19 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Секции_архитектура_и_интерьер" sketch:type="MSArtboardGroup" transform="translate(-490.000000, -3027.000000)" fill="#BFBFBF">
+            <g id="5_block" sketch:type="MSLayerGroup" transform="translate(490.000000, 2973.000000)">
+                <path d="M17.8828182,85.9238889 C18.3944545,86.4527778 18.3944545,87.3025 17.8828182,87.8275 C17.3711818,88.3525 16.5445455,88.3544444 16.0329091,87.8275 L1.08472727,72.4508333 C0.573090909,71.9258333 0.573090909,71.0761111 1.08472727,70.5472222 L16.0329091,55.1705556 C16.5445455,54.6455556 17.3711818,54.6455556 17.8828182,55.1705556 C18.3944545,55.6975 18.3944545,56.5491667 17.8828182,57.0741667 L4.25,71.5 L17.8828182,85.9238889 L17.8828182,85.9238889 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

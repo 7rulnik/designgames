@@ -1,0 +1,55 @@
+.registration {
+  height: 555px;
+  /* height: 500px; */
+  font-weight: 300;
+  padding-top: 78px;
+  .text-center;
+  &__timer {
+    font-weight: 400;
+    font-size: 40px;
+    color: #232323;
+    margin-bottom: 23px;
+    &-text {
+      font-size: 16px;
+      color: #232323;
+      line-height: 20px;
+      margin-bottom: 71px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    & + & {
+      margin-top: 25px;
+    }
+    a {
+      color: #ad8b39;
+      text-decoration: underline;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    .btn;
+    .center-block;
+    .text-uppercase;
+    border: 2px solid #000;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    line-height: 54px;
+    padding: 0;
+    display: block;
+    width: 270px;
+    height: 58px;
+    transition: all 0.3s ease-out;
+    margin-top: 73px;
+    &:hover {
+      background: #c7a95f;
+      border: 2px solid #b89b54;
+      color: #fff;
+      transition: all 0s ease-out;
+    }
+    &:active {
+      background: #b89b54;
+    }
+  }
+}

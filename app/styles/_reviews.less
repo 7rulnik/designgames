@@ -1,0 +1,59 @@
+@blockquote-small-color: #000;
+.reviews {
+  min-height: 277px;
+  &__blockquote {
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    line-height: 30px;
+    .clearfix;
+    /* width: 676px; */
+    /* .center-block */
+    ;
+    padding-left: 158px;
+  }
+  &__photo,
+  &__text {
+    float: left;
+  }
+  &__photo {
+    margin-top: 10px;
+    margin-right: 40px;
+  }
+  &__who {
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -3px;
+    &:before {
+      content: '';
+    }
+  }
+  .slick {
+    &-prev,
+    &-next {
+      width: 18px;
+      height: 34px;
+      top: 69px;
+      &::before {
+        content: '';
+      }
+    }
+    &-prev {
+      left: 17px;
+      background: url("../images/slider/review_prev.svg");
+      &:hover,
+      &:focus {
+        background: url("../images/slider/review_prev.svg");
+      }
+    }
+    &-next {
+      right: 23px;
+      background: url("../images/slider/review_next.svg");
+      &:hover,
+      &:focus {
+        background: url("../images/slider/review_next.svg");
+      }
+    }
+  }
+}

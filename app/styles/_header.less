@@ -1,15 +1,36 @@
 .header {
   // height: 1235px;
-  height: 1233px;
-  background: url("../images/cover.jpg") no-repeat top center;
+  /* height: 1233px; */
+  height: 1334px;
+  background: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: top center !important;
   position: relative;
+  padding-top: 68px;
+  background-size: cover;
+  &--section {
+    height: 998px;
+  }
+  &--branding {
+    background: url("../images/cover_branding.jpg");
+  }
+  &--interface {
+    background: url("../images/cover_interface.jpg");
+  }
+  &--architecture {
+    background: url("../images/cover_architecture.jpg");
+  }
+  &--costume {
+    background: url("../images/cover_costume.jpg");
+  }
   &__title {
     font-size: 60px;
     line-height: 70px;
     font-weight: 500;
     color: #fff;
-    margin-top: 108px;
-    margin-bottom: 31px;
+    margin-top: 109px;
+    margin-bottom: 30px;
+    margin-left: -3px;
   }
   &__registration {
     padding-top: 120px;
@@ -20,6 +41,11 @@
       text-decoration: underline;
       color: #c7a95f;
       line-height: 22px;
+      font-weight: 500;
+      &:hover {
+        text-decoration: none;
+        color: #c7a95f;
+      }
       & + & {
         margin-top: 8px;
         margin-bottom: 30px;
@@ -29,8 +55,10 @@
   &__timer {
     color: #fff;
     font-size: 23px;
+    font-weight: 400;
     &-text {
       font-size: 14px;
+      font-weight: 300;
       color: #fff;
     }
   }

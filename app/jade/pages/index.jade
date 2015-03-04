@@ -1,59 +1,46 @@
+block var
+	- var mainpage = true
 extends ../layout/default.jade
 block header
-	.container
-		.row
-			.col-xs-9
-				h2.header__title Игры дизайнеров,<br>всероссийский<br>чемпионат
-				.likely.likely-light
-					.twitter Твитнуть
-					.facebook Поделиться
-					//- .gplus Плюсануть
-					.vkontakte Поделиться
-			.header__registration.col-xs-3
-				a.header__registration-link Регистрация команды
-				a.header__registration-link Войти в личный кабинет
-				date.header__timer
-				p.header__timer-text до конца регистрации команд.
-		section.events.row
-			//- TODO
-			a.events__nearest-link Ближайшие события
-			.col-xs-3
-				date.events__date(datetime='2015-02-23')
-					|23
-					span.events__month 02
-				p Открытие<br>регистрации.
-			.col-xs-3
-				date.events__date(datetime='2015-02-26')
-					|26
-					span.events__month 02
-				p Лекция «Златая<br>цепь брендинга».
-			.col-xs-3
-				date.events__date(datetime='2015-03-05')
-					|05
-					span.events__month 03
-				p Лекция «Основы<br>инфографики».
-			.col-xs-3
-				date.events__date(datetime='2015-03-12')
-					|12
-					span.events__month 03
-				p Лекция<br>«Прогрессивный джипег»».
-	section.about
+	header.header
+		include ../partials/navbar.jade
 		.container
-			h3.about__title Для кого проводится чемпионат?
-			p.about__text «Игры дизайнеров» созданы для молодых и амбициозных дизайнеров, разработчиков, маркетологов<br>и рекламистов разных направлений. Основная задача — познакомить участников с потенциальными<br>работодателями и представителями крупных компаний. 
 			.row
-				.about__item-number.col-xs-3
-					span.about__number 4
-					span.about__number-text секции
-				.about__item-number.col-xs-3
-					span.about__number 800
-					span.about__number-text участников
-				.about__item-number.col-xs-3
-					span.about__number 150
-					span.about__number-text работодателей
-				.about__item-number.col-xs-3
-					span.about__number 100
-					span.about__number-text призов
+				.col-xs-9
+					h2.header__title Игры дизайнеров,<br>всероссийский<br>чемпионат 2015
+					.likely.likely-light
+						.twitter Твитнуть
+						.facebook Поделиться
+						//- .gplus Плюсануть
+						.vkontakte Поделиться
+				include ../partials/header-registration.jade
+			include ../partials/events.jade
+		section.about
+			.container
+				.row
+					.col-xs-6
+						h3.about__title Что такое «Игры дизайнеров»?
+						p.about__text «Игры дизайнеров» — это ежегодный командный чемпионат по&nbsp;разным направлениям дизайна на основе кейсов<br>от ведущих компаний, агентств и студий страны.
+					.col-xs-6.about--who
+						h3.about__title Для кого проводится чемпионат?
+						p.about__text Соревнования созданы для студентов и молодых<br>специалистов: дизайнеров, разработчиков и маркетологов.<br>Основная задача — познакомить участников с потенциальными работодателями и представителями крупных компаний. 
+				hr.about__separator
+				.row
+					.about__item-number.about__item-number--sections.col-xs-3
+						span.about__number 4
+						span.about__number-text секции
+					.about__item-number.about__item-number--members.col-xs-3
+						span.about__number 800
+							span.about__plus +
+						span.about__number-text участников со страны
+					.about__item-number.about__item-number--prizes.col-xs-3
+						span.about__number 100
+							span.about__plus +
+						span.about__number-text призов от партнёров
+					.about__item-number.about__item-number--employers.col-xs-3
+						span.about__number 50
+							span.about__plus +
+						span.about__number-text работодателей
 block content
 	//- section.partners
 		.container
@@ -77,64 +64,65 @@ block content
 					p лого
 	section.champ
 		.container
-			h2.champ__title Твой план действий
+			h2.champ__title План действий вашей команды
 			img.champ__timeline(src="images/timeline.svg")
 			.row
-				.col-xs-2.
-					Собери
-					<br>и зарегистрируй
-					<br>свою команду<span class="champ__text--note">*</span>
-					<br>до 15 марта.
 				.col-xs-2.
 					Выберите секцию,
 					<br>в которой будете
 					<br>бороться.
 				.col-xs-2.
-					Решайте реальные
+					Соберите
+					<br>и зарегистрируйте
+					<br>команду<span class="champ__text--note">*</span>
+					<br>до 15 марта.
+				.champ--3.col-xs-2.
+					Решите реальные
 					<br>клиентские
-					<br>задачи.
-				.col-xs-2.
-					Прокачивайте
+					<br>задачи. 1-2 этапы
+					<br>проходят заочно.
+				.champ--4.col-xs-2.
+					Прокачайте
 					<br>навыки во время
 					<br>чемпионата.
-				.col-xs-2.
+				.champ--5.col-xs-2.
 					Успешно
 					<br>презентуйте
 					<br>своё решение
 					<br>на финале в СПб.
-				.col-xs-2.
+				.champ--6.col-xs-2.
 					Станьте лучшими,
 					<br>получите опыт
-					<br>и работу в крупной
-					<br>компании.
+					<br>и работу у лидеров
+					<br>рынка.
 			p.champ__text
-				span.champ__text--note * 
-				|Команда состоит из 2-4 человек. Возраст участников до 25 лет (включительно). Местонахождение неважно,<br>но в случае прохождения в финал, нужно приехать в Санкт-Петербург для защиты решения.<br>Иногородним участникам помогаем с размещением.
-	section.sections
+				span.champ__text--note *
+				|Команда состоит из 3-4 человек. Возраст участников до 25 лет (включительно). Местонахождение неважно,<br>но в случае прохождения в финал, нужно приехать в Санкт-Петербург для защиты решения.<br>Иногородним участникам помогаем с размещением.
+	section#sections.sections
 		.container.container--sections
 			img(src='/images/sections_icon.svg')
 			h3.sections__title Выбор за тобой
-			p.sections__text Чувствуя тенденции современного мира, мы разделили чемпионат на 4 секции.<br>Выбери секцию, которая отражает твои навыки.
+			p.sections__text Чувствуя тенденции современного мира, мы разделили чемпионат на 4 секции.<br>Выбери секцию, которая отражает твои навыки. Участие бесплатное.
 			.row
-				a.sections__item.sections__item--branding.col-xs-6(href='#')
+				a.sections__item.sections__item--branding.col-xs-6(href='/sections/branding.html')
 					h3.sections__item-title Брендинг
 					p.sections__item-about  Секция для графических дизайнеров и маркетологов.
 					p.sections__item-link <span>Подробнее о секции</span> →
 					
-				a.sections__item.sections__item--interface.col-xs-6(href='#')
+				a.sections__item.sections__item--interface.col-xs-6(href='/sections/interface.html')
 					h3.sections__item-title Интерфейсы
 					p.sections__item-about Секция для проектировщиков, веб-дизайнеров и разработчиков.
 					p.sections__item-link <span>Подробнее о секции</span> →
 				.clearfix
 					
-				a.sections__item.sections__item--architecture.col-xs-6(href='#')
-					h3.sections__item-title Архитектура и интерьер
-					p.sections__item-about Секция для архитекторов, дизайнеров интерьера и маркетологов.
+				a.sections__item.sections__item--architecture.col-xs-6(href='/sections/architecture.html')
+					h3.sections__item-title Архитектура<br>и интерьер
+					p.sections__item-about Секция для архитекторов и дизайнеров интерьера.
 					p.sections__item-link <span>Подробнее о секции</span> →
 					
-				a.sections__item.sections__item--costume.col-xs-6(href='#')
+				a.sections__item.sections__item--costume.col-xs-6(href='/sections/costume.html')
 					h3.sections__item-title Дизайн костюма
-					p.sections__item-about Секция для дизайнеров костюма, стилистов и маркетологов.
+					p.sections__item-about Секция для дизайнеров костюма и стилистов.
 					p.sections__item-link <span>Подробнее о секции</span> →
 	section.why
 		.container.container--sections
@@ -144,46 +132,31 @@ block content
 					p Чемпионат ежегодно собирает молодых дизайнеров,<br>разработчиков и маркетологов со всей страны в одном месте.<br>Новые и полезные знакомства обеспечены.
 				.why__item.why__item--right.col-xs-6
 					h4.why__title Реальные задачи
-					p Задания чемпионата составлены при поддержке ведущих компаний<br>страны по актуальным рыночным ситуациям. Они безумные, сложные,<br>интересные и под силу не каждому.
+					p Задания чемпионата составлены при поддержке ведущих<br>компаний страны по актуальным рыночным ситуациям.<br>Они безумные, сложные, интересные и под силу не каждому.
 				.why__item.col-xs-6
 					h4.why__title Образовательная программа
-					p Во время чемпионата ты пополнишь свою базу знаний:<br>каждую неделю лучшие специалисты страны будут проводить<br>тематические лекции и мастер-классы.
+					p Во время чемпионата ты пополнишь свою базу знаний:<br>каждую неделю лучшие специалисты страны будут<br>проводить тематические лекции и мастер-классы.
 				.why__item.why__item--right.col-xs-6
 					h4.why__title Возможность трудоустройства
 					p В зрительный зал и в жюри мы пригласили руководителей<br>крупных компаний России. Только лучшие команды смогут<br>попасть к ним на работу или стажировку.
 	section.partners
 		.container
-			//- h3 Генеральные партнёры
-			.row
-				.col-md-3
-					a: img.partners__logo(src='/images/logo/logo_coca-cola.svg')
-				.col-md-3
-					a: img.partners__logo(src='/images/logo/logo_netologiya.svg')
-				.col-md-3
-					a: img.partners__logo(src='/images/logo/logo_yota.svg')
-				.col-md-3
-					a: img.partners__logo(src='/images/logo/logo_microsoft.svg')
-				.clearfix
-				.col-md-3
-					a: img.partners__logo(src='/images/logo/logo_veeam.png')
-				.col-md-3
-					a: img.partners__logo(src='../../images/logo/logo_rostelekom.png')
-				.col-md-3
-					a: img.partners__logo(src='../../images/logo/logo_ikra.svg')
-				.col-md-3
-					a: img.partners__logo(src='../../images/logo/logo_medi.png')
-	//- sectio.gallery
-		.container.container--gallery
-			.row
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-				.col-xs-4: img(src='http://placehold.it/350x150')
-
+			br
+			h3.partners__title Партнёры и организаторы
+			a(href='http://gildfamily.ru/' target='_blank'): img.partners__logo.partners__logo--guild(src='/images/logo/logo_guild-black.svg')
+			a(href='http://microsoft.com/ru-ru/default.aspx' target='_blank'): img.partners__logo.partners__logo--microsoft(src='/images/logo/logo_microsoft.svg') 
+			a(href='http://coca-colahellenic.ru' target='_blank'): img.partners__logo.partners__logo--coca-cola(src='/images/logo/logo_coca-cola.svg')
+			a(href='http://sutd.ru' target='_blank'): img.partners__logo.partners__logo--td(src='/images/logo/logo_sutd.svg')
+			//- .col-md-3
+			//- a: img.partners__logo(src='/images/logo/logo_microsoft.svg')
+			br
+			//- a(href='http://englishfirst.ru/englishfirst/default.aspx' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--ef(src='/images/logo/logo_ef.svg')
+			//- a(href='http://netology.ru' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--netologiya(src='/images/logo/logo_netologiya.svg')
+			a(href='http://veeam.com' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--veeam(src='/images/logo/logo_veeam.svg')
+			a(href='http://1.kuka.pro' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--kuka(src='/images/logo/logo_kuka.svg')
+			a(href='http://www.ikraikra.ru/spb/courses/?utm_source=DG_site&utm_medium=logo&utm_campaign=DG' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--ikra(src='/images/logo/logo_ikra.svg')
+			a(href='http://fb.com/artw.ru' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--artw(src='/images/logo/logo_artw.svg')
+			//- a(href=' http://label-men.com' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--labelmen(src='/images/logo/logo_labelmen.svg')
+	include ../partials/gallery.jade
 
 					

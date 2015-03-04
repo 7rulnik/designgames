@@ -1,0 +1,109 @@
+block var
+	- var title = 'Секция «Архитектура и интерьер»'
+	- var architecture = true
+extends ../../layout/sections.jade
+block header
+	header.header.header--section.header--architecture
+		include ../../partials/navbar.jade
+		.container
+			.row
+				.col-xs-9
+					h2.header__title Секция<br>Архитектура<br>и интерьер
+					.likely.likely-light
+						.twitter Твитнуть
+						.facebook Поделиться
+						//- .gplus Плюсануть
+						.vkontakte Поделиться
+				include ../../partials/header-registration.jade
+			//- include ../partials/events.jade
+		section.about.about--section
+			.container
+				p.about__text Не нам объяснять, как окружающее пространство влияет на человека.<br>Не нам говорить о том, какой цвет обоев спасает браки. Это всё расскажешь<br>и покажешь ты. Секция «Архитектура и интерьер» ждёт тебя.
+				.about__icon
+					img(src='/images/icons/architecture/1.svg')
+					p.about__icon-text Маркетинг<br>и аналитика
+				.about__icon
+					img(src='/images/icons/architecture/2.svg')
+					p.about__icon-text Пространственная<br>среда
+				.about__icon
+					img(src='/images/icons/architecture/3.svg')
+					p.about__icon-text Проектирование<br>и архитектура
+				.about__icon
+					img(src='/images/icons/architecture/4.svg')
+					p.about__icon-text Разработка чертежей<br>и визуализации
+				.about__icon
+					img(src='/images/icons/architecture/5.svg')
+					p.about__icon-text Инженерия<br>и строительство
+				//- .row.about__number-container
+					.about__item-number.col-xs-3
+						span.about__number 4
+						span.about__number-text секции
+					.about__item-number.col-xs-3
+						span.about__number 800
+							span.about__plus +
+						span.about__number-text участников со страны
+					.about__item-number.col-xs-3
+						span.about__number 100
+							span.about__plus +
+						span.about__number-text призов от парнёров
+					.about__item-number.col-xs-3
+						span.about__number 50
+							span.about__plus +
+						span.about__number-text работодателей
+block tab-second-stage
+	a(href='http://coca-colahellenic.ru/' target='_blank'): img.tab-pane__img(src='/images/logo/logo_coca-cola-white.svg')
+	.tab-pane__text
+		p.tab-pane__date 24 — 30 марта 2015
+		p.tab-pane__about 2-й этап проходит заочно.<br>Вам предстоит решить задание<br>от компании <a class='tab-pane__link' href='http://coca-colahellenic.ru/' target='_blank'>Hellenic Coca-Cola</a><br>за 7 дней. Лучшие команды<br>пройдут в финал и презентуют<br>решение перед жюри.
+		hr.tab-pane__separator
+		//- .tab-pane__link-container
+		a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+		br
+		a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+block tab-third-stage
+	img.tab-pane__img(src='/images/mask.svg')
+	.tab-pane__text
+		p.tab-pane__date 11 апреля 2015
+		p.tab-pane__about 3-й этап проходит очно<br>в Санкт-Петербурге. Вам предстоит<br>решить задание от компании-партнёра<br>за 5 часов и презентовать его перед жюри.
+		hr.tab-pane__separator
+		//- .tab-pane__link-container
+		a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+		br
+		a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+block calendar-title
+	h3.program__title Программа секции «Архитектура и интерьер»
+block calendar-final
+	td 8
+	td 9
+	td 10
+	td.calendar__final
+		date.calendar__date(datetime='2015-04-11') 11 апреля
+		p.calendar__event Решение очного задания в СПб. Финал.
+		i.calendar__marker.calendar__marker--start 0
+		i.calendar__marker.calendar__marker--end 1
+		
+block curator-person
+	img.curator__img(src='/images/people/8.png')
+	.curator__who
+		p.curator__name Лера Бесподобная
+		a.curator__email(href='mailto: valeriya.v@designgames.ru') valeriya.v@designgames.ru
+
+
+block sections
+	.row
+		a.sections__item.sections__item--branding.sections__item--fluid.col-xs-6(href='/sections/branding.html')
+			h3.sections__item-title Брендинг
+			p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		a.sections__item.sections__item--interface.sections__item--fluid.col-xs-6(href='/sections/interface.html')
+			h3.sections__item-title Интерфейсы
+			p.sections__item-about Секция для проектировщиков, веб-дизайнеров и&nbsp;разработчиков.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		//- a.sections__item.sections__item--architecture.sections__item--fluid.col-xs-6(href='architecture.html')
+			h3.sections__item-title Архитектура и интерьер
+			p.sections__item-about Секция для архитекторов и дизайнеров интерьера.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		a.sections__item.sections__item--costume.sections__item--fluid.col-xs-6(href='/sections/costume.html')
+			h3.sections__item-title Дизайн костюма
+			p.sections__item-about Секция для дизайнеров костюма и&nbsp;стилистов.
+			p.sections__item-link <span>Подробнее о секции</span> →

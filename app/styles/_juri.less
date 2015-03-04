@@ -1,0 +1,32 @@
+.juri {
+  height: 555px;
+  // padding-top: 67px;
+  padding-top: 48px;
+  &__title {
+    font-size: 40px;
+    margin-bottom: 76px;
+    .text-center;
+    font-weight: 400;
+  }
+  &__item {
+    .text-center;
+    float: left;
+    width: 245px;
+    height: 286px;
+    padding-top: 60px;
+    border: 2px solid #eee;
+    & + & {
+      border-left: 0;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    color: #232323;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+  &__about {
+    font-weight: 300;
+  }
+}

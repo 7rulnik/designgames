@@ -1,0 +1,153 @@
+block var
+	- var title = 'Контакты'
+	- var contacts = true
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section.contacts
+		.container
+			.row
+				.col-xs-5
+					h2.contacts__page-title Контакты
+					p.contacts__email По вопросам сотрудничества<br>
+						a(href='mailto: yana.d@designgames.ru') yana.d@designgames.ru
+					p.contacts__email По вопросам инфопартнёрства<br>
+						a(href='mailto: svetlana.a@designgames.ru') svetlana.a@designgames.ru
+					p.contacts__email По общим вопросам<br>
+						a(href='mailto: ivan.u@designgames.ru') ivan.u@designgames.ru
+				.col-xs-7
+					form.contacts__form(role="form" method="post" action="/scripts/contacts-process.php")
+						p.contacts__form-about Если мы можем чем-то помочь, то, пожалуйста, напишите<br>нам письмо через форму обратной связи. Мы рассмотрим<br>обращение в течение 1-2 дней и обязательно ответим.
+						input#contacts__name.contacts__input(name='name' type='text' placeholder='Ваше имя*' required)
+						input#contacts__email.contacts__input(name='email' type='email' placeholder='Ваша почта*' required)
+						//- input.contacts__input.contacts__input--wrong(type='email' placeholder='Ваш e-mail*')
+						//- input.contacts__input.contacts__input--success(type='email' placeholder='Ваш e-mail*')
+						textarea#contacts__message.contacts__input(name='message' placeholder='Чем мы можем помочь?*' rows='5' required)
+						input.contacts__submit(type="submit" value="Отправить письмо" disabled)
+						//- p.contacts__submit-message Спасибо, письмо отправлено.<br>В течение 1-2 дней с вами свяжутся.
+			h3.contacts__title.contacts__title--margin-top Отдел развития
+			.row.contacts__row
+				.contacts__item
+					img(src='/images/people/1.png')
+					a(href='http://vk.com/gerard_yakushev' target='_blank') Григорий Якушев
+					p Директор по развитию,<br>основатель проекта
+				.contacts__item
+					img(src='/images/people/2.png')
+					a(href='http://vk.com/nikita_dmitrievskiy' target='_blank') Никита Дмитриевский
+					p Специалист по развитию<br>секции «Брендинг»; работа<br>со спонсорами; текст для сайта
+				.contacts__item
+					img(src='/images/people/3.png')
+					a(href='https://vk.com/yanitatochka' target='_blank') Яна Доценко
+					p Специалист по развитию<br>секции «Интерфейсы»;<br>работа со спонсорами
+				.clearfix
+				.contacts__item.contacts__item--row
+					img(src='/images/people/4.png')
+					a(href='http://vk.com/breath22' target='_blank') Василиса Казимова
+					p Специалист по развитию<br>секции «Архитектура и интерьер»
+				.contacts__item.contacts__item--row
+					img(src='/images/people/elvira.png')
+					a(href='https://vk.com/ellypatrakeeva' target='_blank') Эльвира Патракеева
+					p Специалист по развитию<br>секции «Дизайн костюма»
+			
+			h3.contacts__title Отдел продукта
+			.row.contacts__row
+				.contacts__item
+					img(src='/images/people/5.png')
+					a(href='http://vk.com/id238161818' target='_blank') Иван Уваров
+					p Старший куратор; куратор секции<br>«Интерфейсы»; главный редактор;<br>дизайн сайта
+				.contacts__item
+					img(src='/images/people/6.png')
+					a(href='http://vk.com/monarchyofmea' target='_blank') Кристина Загидуллина
+					p Куратор секции «Брендинг»
+				.contacts__item
+					img(src='/images/people/7.png')
+					a(href='http://vk.com/id41241162' target='_blank') Ирина Пестова
+					p Куратор секции «Дизайн костюма»
+				.clearfix
+				.contacts__item.contacts__item--row
+					img(src='/images/people/8.png')
+					a(href='http://vk.com/id166704261' target='_blank') Валерия Вологина
+					p Куратор секции «Архитектура<br>и интерьер»
+				.contacts__item.contacts__item--row
+					img(src='/images/people/9.png')
+					a(href='http://vk.com/semirulnik' target='_blank') Валентин Семирульник
+					p Вёрстка и разработка сайта;<br>техническая поддержка
+				.contacts__item.contacts__item--row
+					img(src='/images/people/10.png')
+					a(href='http://vk.com/annakozub' target='_blank') Анна Козуб
+					p Куратор дополнительной<br>программы
+					
+			h3.contacts__title Отдел продвижения
+			.row.contacts__row
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/11.png')
+					a(href='https://vk.com/kuba_bu' target='_blank') Анастасия Кузнецова
+					p Digital-маркетинг
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/12.png')
+					a(href='https://vk.com/etceteranough' target='_blank') Светлана Андриянова
+					p PR-специалист
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/13.png')
+					a(href='https://vk.com/tonitsoyd' target='_blank') Дмитрий Тоницой
+					p Репортажный фотограф
+				.clearfix
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/14.png')
+					a(href='https://vk.com/valerismfoto' target='_blank') Валерия Смирнова
+					p Видео-оператор
+			
+			h3.contacts__title Айдентика
+			.row.contacts__row
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/15.png')
+					a(href='https://www.behance.net/darisha' target='_blank') Дарья Семёнова
+					p Дизайнер чемпионата
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/16.png')
+					a(href='https://vk.com/club8627145' target='_blank') Екатерина Веселова
+					p Фотограф
+				.contacts__item.contacts__item--padding
+					img(src='/images/people/17.png')
+					a(href='https://vk.com/robbyk' target='_blank') Роберт Кубус
+					p Видео-оператор; монтаж тизера
+				.clearfix
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/18.png')
+					a(href='https://vk.com/try_lab' target='_blank') Эвелина Гуляева
+					p Конструктор костюмов
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/19.png')
+					a(href='https://vk.com/try_lab' target='_blank') Ксения Храмцова
+					p Конструктор костюмов
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/20.png')
+					a(href='https://vk.com/zachemtakghit' target='_blank') Алёша Мандарин
+					p Причёски
+				.clearfix
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/21.png')
+					a(href='https://vk.com/id7784790' target='_blank') Яна Мущенко
+					p Визажист
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/22.png')
+					a(href='https://vk.com/darinapilina' target='_blank') Дарина Пилина
+					p Модель
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/23.png')
+					a(href='https://vk.com/kristinavarf' target='_blank') Кристина Варфоломеева
+					p Модель
+				.clearfix
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/24.png')
+					a(href='https://vk.com/id97797610' target='_blank') Алина Шевелёва
+					p Модель
+				.contacts__item.contacts__item--row.contacts__item--padding
+					img(src='/images/people/25.png')
+					a(href='https://vk.com/id87149603' target='_blank') Анастасия Маркарян
+					p Модель
+					
+
+
+				

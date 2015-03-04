@@ -1,0 +1,98 @@
+block var
+	- var title = 'Секция «Дизайн костюма»'
+	- var costume = true
+extends ../../layout/sections.jade
+block header
+	header.header.header--section.header--costume
+		include ../../partials/navbar.jade
+		.container
+			.row
+				.col-xs-9
+					h2.header__title Секция<br>Дизайн<br>костюма
+					.likely.likely-light
+						.twitter Твитнуть
+						.facebook Поделиться
+						//- .gplus Плюсануть
+						.vkontakte Поделиться
+				include ../../partials/header-registration.jade
+			//- include ../partials/events.jade
+		section.about.about--section
+			.container
+				p.about__text Считаешь, что мир высокой моды недостаточно высок для тебя?<br>Мечтаешь о бутике в центре Милана? А может быть ты готов одевать мировых звёзд?<br>Докажи это, заяви о себе. Секция «Дизайн костюма» ждёт тебя.
+				.about__icon
+					img(src='/images/icons/costume/1.svg')
+					p.about__icon-text Fashion-бизнес<br>и управление
+				.about__icon
+					img(src='/images/icons/costume/2.svg')
+					p.about__icon-text Маркетинг<br>и аналитика
+				.about__icon
+					img(src='/images/icons/costume/3.svg')
+					p.about__icon-text Дизайн и креатив<br>(костюм и аксессуары)
+				.about__icon
+					img(src='/images/icons/costume/4.svg')
+					p.about__icon-text Работа<br>в материале
+				.about__icon
+					img(src='/images/icons/costume/5.svg')
+					p.about__icon-text Продвижение<br>изделий и реклама
+				//- .row.about__number-container
+					.about__item-number.col-xs-3
+						span.about__number 4
+						span.about__number-text секции
+					.about__item-number.col-xs-3
+						span.about__number 800
+							span.about__plus +
+						span.about__number-text участников со страны
+					.about__item-number.col-xs-3
+						span.about__number 100
+							span.about__plus +
+						span.about__number-text призов от парнёров
+					.about__item-number.col-xs-3
+						span.about__number 50
+							span.about__plus +
+						span.about__number-text работодателей
+block tab-third-stage
+	img.tab-pane__img(src='/images/mask.svg')
+	.tab-pane__text
+		p.tab-pane__date 10 апреля 2015
+		p.tab-pane__about 3-й этап проходит очно<br>в Санкт-Петербурге. Вам предстоит<br>решить задание от компании-партнёра<br>за 5 часов и презентовать его перед жюри.
+		hr.tab-pane__separator
+		a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+		br
+		a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
+
+block calendar-title
+	h3.program__title Программа секции «Дизайн костюма»
+block calendar-final
+	td 8
+	td 9
+	td.calendar__final
+		date.calendar__date(datetime='2015-04-10') 10 апреля
+		p.calendar__event Решение очного задания в СПб. Финал.
+		i.calendar__marker.calendar__marker--start 0
+		i.calendar__marker.calendar__marker--end 1
+	td 11
+	
+block curator-person
+	img.curator__img(src='/images/people/7.png')
+	.curator__who
+		p.curator__name Ирина Пестова
+		a.curator__email(href='mailto: irina.p@designgames.ru') irina.p@designgames.ru
+
+block sections
+	a.sections__item.sections__item--branding.sections__item--fluid.col-xs-6(href='/sections/branding.html')
+		h3.sections__item-title Брендинг
+		p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+		p.sections__item-link <span>Подробнее о секции</span> →
+	.row
+		a.sections__item.sections__item--interface.sections__item--fluid.col-xs-6(href='/sections/interface.html')
+			h3.sections__item-title Интерфейсы
+			p.sections__item-about Секция для проектировщиков, веб-дизайнеров и&nbsp;разработчиков.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		a.sections__item.sections__item--architecture.sections__item--fluid.col-xs-6(href='/sections/architecture.html')
+			h3.sections__item-title Архитектура и интерьер
+			p.sections__item-about Секция для архитекторов и&nbsp;дизайнеров интерьера.
+			p.sections__item-link <span>Подробнее о секции</span> →
+		//- a.sections__item.sections__item--costume.sections__item--fluid.col-xs-6(href='costume.html')
+			h3.sections__item-title Дизайн костюма
+			p.sections__item-about Секция для дизайнеров костюма и стилистов.
+			p.sections__item-link <span>Подробнее о секции</span> →

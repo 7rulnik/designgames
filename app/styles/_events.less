@@ -1,6 +1,6 @@
 .events {
   background: url("../images/events-border.svg") no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 980px;
   height: 154px;
   color: #fff;
@@ -11,19 +11,28 @@
   &__nearest-link {
     .text-uppercase;
     position: absolute;
-    color: #c7a95f;
-    text-decoration: underline;
+    /* color: #c7a95f; */
+    /* text-decoration: underline; */
+    color: #fff;
     top: -13px;
     left: 50px;
     z-index: 10;
+    font-weight: 500;
   }
   &__date {
     font-size: 36px;
+    font-weight: 400;
   }
   &__month {
     font-size: 16px;
-    top: -12px;
+    top: -14px;
     left: 3px;
     position: relative;
+    font-weight: 400;
+  }
+  &__event-title {
+    line-height: 20px;
+    margin-top: 5px;
+    font-weight: 300;
   }
 }

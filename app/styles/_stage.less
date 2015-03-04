@@ -1,0 +1,118 @@
+.stage {
+  background: #1f1f1f;
+  height: 645px;
+  padding-top: 66px;
+  color: #fff;
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    .text-center;
+    margin-bottom: 29px;
+  }
+  &__nav {
+    width: 960px;
+    height: 70px;
+    list-style: none;
+    border: 3px solid rgba(235,235,235,0.05);
+    padding-left: 0;
+    .text-center;
+    li {
+      display: inline-block;
+      /* float: left; */
+      height: 100%;
+    }
+    li + li .stage__nav-link {
+      margin-left: -4px;
+    }
+    &-link {
+      font-weight: 300;
+      font-size: 20px;
+      color: #b3b3b3;
+      padding: 0 28px;
+      height: 100%;
+      display: block;
+      line-height: 58px;
+      height: 67px;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 3px solid #d2b672;
+      }
+      /* line-height: 24px; */
+    }
+    .active {
+      .stage__nav-link {
+        font-weight: 400;
+        color: #fff;
+        border-bottom: 3px solid #d2b672;
+        text-decoration: none;
+      }
+    }
+  }
+  &__tab-content {
+    .tab-content;
+  }
+}
+.tab-pane {
+  .text-center;
+  &__img,
+  &__text {
+    display: inline-block;
+    /* vertical-align: top; */
+    vertical-align: middle;
+  }
+  &__img {
+    /* padding-right: 61px; */
+    /* padding-top: 131px; */
+    position: relative;
+    /* left: -34px; */
+    padding-top: 62px;
+    left: -60px;
+  }
+  &__text {
+    .text-left;
+    padding-top: 62px;
+    left: 34px;
+    position: relative;
+  }
+  &__date {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  &__about {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__separator {
+    border-top: 3px solid #2a2a2a;
+    margin-top: 37px;
+    margin-bottom: 31px;
+    width: 297px;
+    margin-left: 0;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #d2b672;
+    text-decoration: underline;
+    &:hover {
+      color: #d2b672;
+      text-decoration: none;
+    }
+    &-container {
+      padding-left: 42px;
+      position: relative;
+      &::before {
+        display: block;
+        content: '';
+        background: url("../images/doc.svg");
+        width: 28px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+      }
+    }
+  }
+}
