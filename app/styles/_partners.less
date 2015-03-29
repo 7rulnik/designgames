@@ -1,3 +1,4 @@
+// блок
 .partners {
   .text-center;
   padding-top: 23px;
@@ -6,7 +7,7 @@
     font-weight: 400;
     font-size: 40px;
     color: #232323;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
   &__logo {
     opacity: 0.65;
@@ -14,18 +15,21 @@
     &--second-row {
       margin-top: 80px;
     }
+    &--thrid-row {
+      margin-top: 79px;
+    }
     &--guild {
       /* top: -1px; */
-      left: 1px;
+      left: 3px;
     }
     &--microsoft {
-      left: 1px;
+      left: 8px;
       /* top: -1px; */
     }
     &--coca-cola {
       /* top: 3px; */
       top: 1px;
-      left: 1px;
+      left: 5px;
     }
     &--td {
       left: 1px;
@@ -35,7 +39,7 @@
     &--kuka,
     &--artw {
       /* left: -10px; */
-      top: -1px;
+      /* top: -1px; */
     }
     &--kuka,
     &--artw {
@@ -43,6 +47,9 @@
     }
     &--ikra {
       left: -3px;
+      top: -1px;
+    }
+    &--brandson {
       top: -2px;
     }
     &:hover {
@@ -51,9 +58,95 @@
     }
   }
   a + a .partners__logo {
-    margin-left: 92px;
+    margin-left: 105px;
   }
   a + a .partners__logo--second-row {
     margin-left: 84px;
+  }
+  a + a .partners__logo--thrid-row {
+    margin-left: 77px;
+  }
+}
+/* страница */
+.partners-page {
+  background: #1f1f1f;
+  color: #fff;
+  padding-top: 124px;
+  padding-bottom: 63px;
+  img {
+    opacity: 0.65;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 54px;
+    &--partner {
+      margin-bottom: 76px;
+    }
+    &--employer {
+      margin-bottom: 67px;
+    }
+    &--prize {
+      margin-bottom: 79px;
+    }
+    &--information {
+      margin-bottom: 77px;
+    }
+  }
+  &__divider {
+    border-top: 2px solid #3b3b3b;
+    margin-top: 78px;
+    margin-bottom: 75px;
+    &--partner {
+      margin-top: 81px;
+    }
+    &--prize {
+      margin-top: 80px;
+    }
+    &--information {
+      margin-top: 81px;
+      margin-bottom: 71px;
+    }
+  }
+  &__org + &__org {
+    margin-left: 104px;
+  }
+  &__partner + &__partner {
+    margin-left: 95px;
+  }
+  &__employer + &__employer {
+    margin-left: 75px;
+  }
+  &__employer--second-row {
+    margin-top: 77px;
+    & + & {
+      margin-left: 93px;
+    }
+  }
+  &__prize + &__prize {
+    margin-left: 40px;
+  }
+  &__information + &__information {
+    margin-left: 30px;
+  }
+  &__information--second-row {
+    margin-top: 38px;
+  }
+  &__link {
+    .linkOrange();
+  }
+  a {
+    display: inline-block;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  p + p {
+    margin-top: 30px;
   }
 }

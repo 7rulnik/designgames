@@ -1,7 +1,7 @@
 <?php
 
 $to      = 'anastasiya.k@designgames.ru';
-$subject = 'Новое сообщение со страницы «Контакты»';
+$subject = 'Письмо со страниы Контакты';
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Сайт «Игры дизайнеров» <bot@designgames.ru>' . "\r\n";
 "Content-type: text/html; charset=UTF-8" . "\r\n";

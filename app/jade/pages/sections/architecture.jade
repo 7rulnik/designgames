@@ -50,6 +50,19 @@ block header
 						span.about__number 50
 							span.about__plus +
 						span.about__number-text работодателей
+block tab-first-stage
+	.tab-pane__logo
+		a.tab-pane__img(href='http://mironov-studio.com/' target='_blank'): img(src='/images/logo/sections/logo_mironov.png')
+		br
+		a.tab-pane__img(href='http://zhilins.ru/ru' target='_blank'): img(src='/images/logo/sections/logo_zilin.svg')
+	.tab-pane__text
+		p.tab-pane__date 16 — 22 марта 2015
+		p.tab-pane__about 1-й этап проходит заочно.<br>Вам предстоит решить задание<br>от компаний <a class='tab-pane__link' href='http://mironov-studio.com/' target='_blank'>Архитектурная студия<br>Миронова</a> и <a class='tab-pane__link' href='http://zhilins.ru/ru' target='_blank'>Братья Жилины</a> за 7 дней.<br>Лучшие команды пройдут в финал<br>и презентуют решение перед жюри.
+		hr.tab-pane__separator
+		//- .tab-pane__link-container
+		a.tab-pane__link(href='https://docs.google.com/forms/d/13W2AuTDpZ0Z9SvAMg2q2eCOvquHgP9rjvMWkQ8cVF7M/viewform' target='_blank') Зарегистрировать команду
+		br
+		a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
 block tab-second-stage
 	a(href='http://coca-colahellenic.ru/' target='_blank'): img.tab-pane__img(src='/images/logo/logo_coca-cola-white.svg')
 	.tab-pane__text
@@ -61,7 +74,7 @@ block tab-second-stage
 		br
 		a.tab-pane__link(href='/doc/reglament.pdf' target='_blank') Правила и регламент чемпионата
 block tab-third-stage
-	img.tab-pane__img(src='/images/mask.svg')
+	a(href='http://www.privilege.spb.ru/' target='_blank'): img.tab-pane__img(src='/images/logo/sections/logo_privilege.svg')
 	.tab-pane__text
 		p.tab-pane__date 11 апреля 2015
 		p.tab-pane__about 3-й этап проходит очно<br>в Санкт-Петербурге. Вам предстоит<br>решить задание от компании-партнёра<br>за 5 часов и презентовать его перед жюри.

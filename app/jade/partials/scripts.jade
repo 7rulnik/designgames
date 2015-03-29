@@ -3,10 +3,11 @@ if production
 	script(src='//yastatic.net/jquery/2.1.3/jquery.min.js')
 else 
 	script(src='/bower_components/jquery/dist/jquery.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js')
 // build:js({.,app}) /scripts/vendor.js
 // bower:js
-//- script(src='bower_components/jquery.countdown/dist/jquery.countdown.js')
-script(src='/bower_components/jquery.countdown/dist/jquery.countdown.min.js')
+script(src='bower_components/jquery.countdown/dist/jquery.countdown.js')
+//- script(src='/bower_components/jquery.countdown/dist/jquery.countdown.min.js')
 script(src='/bower_components/slick.js/slick/slick.min.js')
 // endbower
 script(src='/bower_components/bootstrap/js/transition.js')
@@ -15,12 +16,20 @@ script(src='/bower_components/bootstrap/js/tab.js')
 // build:js(app) /scripts/likely.js
 script(src='/scripts/likely.js')
 // endbuild
+
+
 // build:js(app) /scripts/main.js
 //- script(src='/scripts/likely.js')
+//- script(src='scripts/jquery.plugin.js')
+//- script(src='scripts/jquery.countdown.js')
+script(src='/scripts/isotope.js')
 script(src='/scripts/timer.js')
 script(src='/scripts/heading-slider.js')
 script(src='/scripts/reviews-slider.js')
 script(src='/scripts/gallery-slider.js')
 script(src='/scripts/contacts-form.js')
+script(src='/scripts/footer-form.js')
+script(src='/scripts/case.js')
+script(src='/scripts/case-upload.js')
 script(src='/scripts/main.js')
 // endbuild

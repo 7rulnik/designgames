@@ -36,9 +36,28 @@
   &__input {
     width: 229px;
     display: inline-block;
+    &--success {
+      color: #83c064;
+      border-bottom: 2px solid #83c064;
+    }
   }
   &__submit {
     display: inline-block;
+    background: url("/images/footer-arrow.svg");
+    border: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+    &:disabled {
+      opacity: 0.35;
+    }
+    &-message {
+      font-size: 13px;
+    }
   }
   &__we {
     /* margin-top: 287px; */

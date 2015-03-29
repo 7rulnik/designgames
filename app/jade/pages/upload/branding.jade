@@ -1,0 +1,32 @@
+block var
+	- var title = 'Брендинг - загрузка работы'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.case
+		.container
+			h1.case__heading Загрузка вашей работы — секция «Брендинг»
+			form.case__form
+				input(type="text" placeholder="Название команды" required class="contacts__input footer__input case__input--team")
+				input(type="email" placeholder="Ваша почта" required class="contacts__input footer__input case__input--email")
+				//- span.btn.btn-success.fileinput-button
+					i.glyphicon.glyphicon-plus
+					span Select files...
+					input(id="fileupload" type="file" name="files[]")
+				//- br
+				//- br
+				//- #progress.progress
+					.progress-bar.progress-bar-success
+				//- #files.files
+				p Загрузите архив на любой файловый хостинг и прикрепите ссылку на него в поле ниже.
+				input(type="text" placeholder="Ссылка на архив" required class="contacts__input footer__input case__input--link")
+				br
+				input(type="submit" value="Отправить на проверку" disabled class="contacts__submit case__submit")
+			hr.case__divider
+			h3.case__curator Куратор секции
+			p Возник вопрос? Обращайтесь к куратору вашей секции.
+			img.curator__img(src='/images/people/6.png')
+			.curator__who
+				p.curator__name.curator__name--case Кристина Энергичная
+				a.curator__email(href='mailto: kristina.z@designgames.ru') kristina.z@designgames.ru

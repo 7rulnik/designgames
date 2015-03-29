@@ -1,0 +1,36 @@
+block var
+	- var title = 'Задание 2 этапа для секции «Брендинг»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.case
+		.container
+			h1.case__heading Задание 2 этапа для секции «Брендинг»
+			p
+				//- |В наш проект обратилась компания 
+				//- a(href='http://www.veeam.com/ru/' target='_blank') Veeam Software
+				//- |&nbsp;с просьбой разработать фирменный стиль
+				//- |<br>для их внутреннего мероприятия, которое проходит 1 раз в год и собирает более 1 000 сотрудников
+				//- |<br>со всего мира. Ваша задача заключается в разработке этого фирменного стиля. Полное техническое
+				//- |<br>задание читайте по ссылке ниже.
+							
+				|В наш проект обратилась digital-школа 
+				a(href='http://www.ikraikra.ru/' target='_blank') «ИКРА»
+				|&nbsp;с просьбой разработки идеи нового фестиваля и его айдентики.
+				|<br>Полное техническое задание читайте по ссылке ниже.
+			a.case__link(href='/files/Branding_Case_IKRA.pdf' target='_blank') Скачать задание 2 этапа
+			p
+				|Внимание! Ваши работы загружайте через 
+				a(href='/upload/branding.html') специальную форму на сайте
+				|&nbsp;до 31 марта 23:59
+				|<br>по московскому времени. 1 апреля в 00:00 форма заблокируется и решения приниматься не будут.
+				|<br>Особое внимание обратите на технические требования к загрузке решений (они описаны в презентации).
+				|<br>Результаты 2 этапа будут опубликованы на сайте 2 апреля после 20:00.
+			hr.case__divider
+			h3.case__curator Куратор секции
+			p Возник вопрос? Обращайтесь к куратору вашей секции.
+			img.curator__img(src='/images/people/6.png')
+			.curator__who
+				p.curator__name.curator__name--case Кристина Энергичная
+				a.curator__email(href='mailto: kristina.z@designgames.ru') kristina.z@designgames.ru

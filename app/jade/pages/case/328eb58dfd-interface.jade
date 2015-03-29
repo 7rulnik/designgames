@@ -1,0 +1,34 @@
+block var
+	- var title = 'Задание 2 этапа для секции «Интерфейсы»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.case
+		.container
+			h1.case__heading Задание 2 этапа для секции «Интерфейсы»
+			p
+				//- |В наш проект обратилось интернет-агентство 
+				//- a(href='http://artw.ru/' target='_blank') ArtW
+				//- |&nbsp;с просьбой разработать сайт для образовательного телеканала.
+				//- |<br>Полное техническое задание читайте по ссылке ниже.
+				
+				|В наш проект обратилась компания 
+				a(href='http://kuka.pro/' target='_blank') «Кузница Кадров»
+				|&nbsp;с просьбой разработки сайта-лендинга для внутреннего проекта компании.
+				|<br>Полное техническое задание читайте по ссылке ниже.
+			a.case__link(href='/files/Interface_Case_Kuka.zip' target='_blank') Скачать задание 1 этапа
+			p
+				|Внимание! Ваши работы загружайте через 
+				a(href='/upload/interface.html') специальную форму на сайте
+				|&nbsp;до 1 апреля 23:59
+				|<br>по московскому времени. 2 апреля в 00:00 форма заблокируется и решения приниматься не будут.
+				|<br>Особое внимание обратите на технические требования к загрузке решений (они описаны в презентации).
+				|<br>Результаты 2 этапа будут опубликованы на сайте 2 апреля после 20:00.
+			hr.case__divider
+			h3.case__curator Куратор секции
+			p Возник вопрос? Обращайтесь к куратору вашей секции.
+			img.curator__img(src='/images/people/5.png')
+			.curator__who
+				p.curator__name.curator__name--case Иван Замечательный
+				a.curator__email(href='mailto: ivan.u@designgames.ru') ivan.u@designgames.ru

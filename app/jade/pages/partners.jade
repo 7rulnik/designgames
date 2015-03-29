@@ -1,0 +1,76 @@
+block var
+	- var title = 'Партнёры'
+	- var partners = true
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section.partners-page
+		.container
+			h2.partners-page__title Организаторы
+			a.partners-page__org(href='http://sutd.ru' target='_blank'): img(src="/images/partners/sutd.svg", alt="")
+			a.partners-page__org(href='http://gildfamily.ru/' target='_blank'): img(src="/images/partners/guild.svg", alt="")
+			hr.partners-page__divider
+			h2.partners-page__title.partners-page__title--partner Партнёры
+			a.partners-page__partner(href='http://coca-colahellenic.ru' target='_blank'): img(src="/images/partners/coca-cola.svg", alt="")
+			a.partners-page__partner(href='http://microsoft.com/ru-ru/default.aspx' target='_blank'): img(src="/images/partners/microsoft.svg", alt="")
+			a.partners-page__partner(href='http://veeam.com' target='_blank'): img(src="/images/partners/veeam.svg", alt="")
+			a.partners-page__partner(href='http://www.ikraikra.ru/spb/courses/?utm_source=DG_site&utm_medium=logo&utm_campaign=DG' target='_blank'): img(src="/images/partners/ikra.svg", alt="")
+			hr.partners-page__divider.partners-page__divider--partner
+			h2.partners-page__title.partners-page__title--employer Работодатели
+			a.partners-page__employer(href='http://brendson.com/' target='_blank'): img(src="/images/partners/brandson.svg", alt="")
+			a.partners-page__employer(href="http://artw.ru/" target='_blank'): img(src="/images/partners/artw.svg", alt="")
+			a.partners-page__employer(href='http://1.kuka.pro' target='_blank'): img(src="/images/partners/kuka.svg", alt="")
+			a.partners-page__employer(href=' http://label-men.com' target='_blank'): img(src="/images/partners/labelmen.svg", alt="")
+			br.partners-page__employer-br
+			a.partners-page__employer.partners-page__employer--second-row(href="http://www.shishki.pro/" target='_blank'): img(src="/images/partners/shishki.svg", alt="")
+			a.partners-page__employer.partners-page__employer--second-row(href="http://os-company.ru/" target='_blank'): img(src="/images/partners/oscompany.svg", alt="")
+			a.partners-page__employer.partners-page__employer--second-row(href="http://wowsiberia.ru/" target='_blank'): img(src="/images/partners/snow.svg", alt="")
+			hr.partners-page__divider
+			h2.partners-page__title.partners-page__title--prize Спонсоры призов
+			a.partners-page__prize(href='http://netology.ru' target='_blank'): img(src="/images/partners/netology.svg", alt="")
+			a.partners-page__prize(href='http://changelab.me/' target='_blank'): img(src="/images/partners/changelab.svg", alt="")
+			a.partners-page__prize(href='http://englishfirst.ru/englishfirst/default.aspx' target='_blank'): img(src="/images/partners/ef.svg", alt="")
+			a.partners-page__prize(href='http://loftyourmind.ru/' target='_blank'): img(src="/images/partners/loftyourmind.svg", alt="")
+			a.partners-page__prize(href="http://www.mann-ivanov-ferber.ru/" target='_blank'): img(src="/images/partners/mif.svg", alt="")
+			a.partners-page__prize(href="http://www.piter.com/" target='_blank'): img(src="/images/partners/piter.svg", alt="")
+			a.partners-page__prize(href="http://voodoobooks.ru/" target='_blank'): img(src="/images/partners/voodoo.svg", alt="")
+			hr.partners-page__divider.partners-page__divider--prize
+			h2.partners-page__title.partners-page__title--information Информационные партнёры
+			a.partners-page__information(href='http://piterstory.com/' target='_blank'): img(src="/images/partners/piterstory.svg", alt="")
+			a.partners-page__information(href='http://design-union.ru/' target='_blank'): img(src="/images/partners/designunion.svg", alt="")
+			a.partners-page__information(href='https://vk.com/allaboutdesign' target='_blank'): img(src="/images/partners/d.png", alt="")
+			a.partners-page__information(href='https://vk.com/infographics' target='_blank'): img(src="/images/partners/i.svg", alt="")
+			a.partners-page__information(href='https://vk.com/projectorat' target='_blank'): img(src="/images/partners/setka.svg", alt="")
+			a.partners-page__information(href='https://vk.com/graphic_designers' target='_blank'): img(src="/images/partners/pen.png", alt="")
+			a.partners-page__information(href='https://vk.com/leravaleraru' target='_blank'): img(src="/images/partners/lv.svg", alt="")
+			a.partners-page__information(href='https://vk.com/architecturesketch' target='_blank'): img(src="/images/partners/asc.svg", alt="")
+			a.partners-page__information(href='http://godesigner.ru/' target='_blank'): img(src="/images/partners/godesigner.svg", alt="")
+			br
+			a.partners-page__information.partners-page__information--second-row(href='http://www.arttube.ru/' target='_blank'): img(src="/images/partners/arttube.svg", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='https://vk.com/sayhime' target='_blank'): img(src="/images/partners/10.svg", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://designet.ru/' target='_blank'): img(src="/images/partners/designnet.svg", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://glazurmag.ru/' target='_blank'): img(src="/images/partners/glazurmag.svg", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://specia.pro/' target='_blank'): img(src="/images/partners/specia.svg", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://forwebdev.ru/' target='_blank'): img(src="/images/partners/for_web_dev.svg", height="45" alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://urbanrooms.ru/' target='_blank'): img(src="/images/partners/urban.svg", height="45" alt="")
+			//-  новые
+			br
+			a.partners-page__information.partners-page__information--second-row(href='http://citycelebrity.ru/citycelebrity/Start.aspx' target='_blank'): img(src="/images/partners/citycelebrity.svg", height="45" alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://www.aiesec.ru/' target='_blank'): img(src="/images/partners/AIESEC_Blue_Logo.png", alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://budny.by/' target='_blank'): img(src="/images/partners/budny.by.svg",height="45" alt="")
+			a.partners-page__information.partners-page__information--second-row(href='http://spb.designschool.ru/' target='_blank'): img(src="/images/partners/school_design.svg",height="45" alt="")
+			br
+			a.partners-page__information.partners-page__information--second-row(href='http://intzine.com/' target='_blank'): img(src="/images/partners/intize.svg", height="45" alt="")
+			a.partners-page__information.partners-page__information--second-row(href='https://vk.com/larchitecture' target='_blank'): img(src="/images/partners/arkhitektura.png" alt="")
+			
+			hr.partners-page__divider.partners-page__divider--information
+			p
+				|Заинтересовало сотрудничество с нами? Напишите письмо на 
+				a.partners-page__link(href='mailto:yana.d@designgames.ru') yana.d@designgames.ru
+				br
+				|и мы вышлем партнёрские пакеты в течение 1-2 дней.
+			p
+				|По вопросам инфопартнёрства пишите на 
+				a.partners-page__link(href='mailto:svetlana.a@designgames.ru') svetlana.a@designgames.ru
+				|.

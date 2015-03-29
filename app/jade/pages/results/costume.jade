@@ -1,0 +1,68 @@
+block var
+	- var title = 'Результаты 1-го этапа секции «Дизайн костюма»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+	else
+		tr.results__loser
+			td
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+block content
+	section.case
+		.container
+			h1.case__heading Результаты 1-го этапа секции «Дизайн костюма»
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team.results__header Команда
+						td Креативность
+						td Исполнение
+						td Презентация
+						td Соответствие ЦА
+						td Глубина анализа
+						td.results__header Общая оценка
+				tbody
+					+team(true, '1. Кипиш Мод', '14,25')
+					+team(true, '2. IB4', '14')
+					+team(true, '3. Петербургский квартет', '13,75')
+					+team(true, '4. Ой, все!', '13,5')
+					+team(true, '5. Фэшн на Урале не дремлет', '13,25')
+					+team(true, '6. Дизайн-группа РБИУ', '11,75')
+					+team(true, '7. Pi crew', '11,5')
+					+team(true, '8. #295', '11')
+					+team(true, '9. 4art', '10,75')
+					+team(true, '10. КУТЮРЬЁZ', '10,5')
+					+team(true, '11. DARK CYAN', '10,5')
+					+team(true, '12. Дизайн или смерть', '10,5')
+					+team(true, '13. •liberty•', '10,25')
+					+team(true, '14. Клан', '9,75')
+					+team(true, '15. RFT', '9,75')
+					+team(true, '16. Sidera', '9,25')
+					+team(true, '17. ЗаРамки', '9,25')
+					+team(true, '18. Ksalex', '8,5')
+					+team(true, '19. Empress', '7,5')
+					+team(true, '20. Кара-Кум', '6,5')
+					
+					+team(false, '21. Клеймо', '6')
+					+team(false, '22. NewLook', '6')
+					+team(false, '23. Rainbow Unicorn', '5')
+					+team(false, '24. Fashion Corporation', '4,75')
+					+team(false, '25. FreeStyle', '4,75')

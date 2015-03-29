@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-2.244633e-09%" id="linearGradient-1">
+            <stop stop-color="#234427" offset="0%"></stop>
+            <stop stop-color="#73BB73" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="45" height="45"></rect>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#234427" offset="0%"></stop>
+            <stop stop-color="#73BB73" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Партнёры" sketch:type="MSArtboardGroup" transform="translate(-864.000000, -1719.000000)">
+            <g id="2_block" sketch:type="MSLayerGroup" transform="translate(469.000000, 142.000000)">
+                <g id="5" transform="translate(0.000000, 1476.000000)">
+                    <g id="3" transform="translate(395.000000, 101.000000)">
+                        <g id="Group">
+                            <g>
+                                <rect id="Rectangle-path" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" x="0" y="0" width="45" height="45"></rect>
+                                <g id="Clipped">
+                                    <mask id="mask-3" sketch:name="SVGID_2_" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <g id="SVGID_2_"></g>
+                                    <path d="M53.1,41.4 L53.1,35.1 L25.2,7.2 L18.9,7.2 L18.9,13.5 L21.6,16.2 L18.9,16.2 L18.9,37.8 L46.8,65.7 L53.1,65.7 L53.1,44.1 L50.4,41.4 L53.1,41.4 Z" id="Shape" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                                </g>
+                            </g>
+                            <g transform="translate(18.900000, 7.200000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                                <rect id="Rectangle-path" x="0" y="9" width="6.3" height="21.6"></rect>
+                                <path d="M0,6.3 L6.3,6.3 L6.3,0 L0,0 L0,6.3 L0,6.3 Z M1.8,1.8 L4.5,1.8 L4.5,4.5 L1.8,4.5 L1.8,1.8 L1.8,1.8 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

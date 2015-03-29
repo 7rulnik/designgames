@@ -1,0 +1,88 @@
+block var
+	- var title = 'Результаты 1-го этапа секции «Брендинг»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+	else
+		tr.results__loser
+			td
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+block content
+	section.case
+		.container
+			h1.case__heading Результаты 1-го этапа секции «Брендинг»
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team.results__header Команда
+						td Креативность
+						td Исполнение
+						td Презентация
+						td Соответствие ЦА
+						td Глубина анализа
+						td.results__header Общая оценка
+				tbody
+					+team(true, '1. Изюм', '13,33')
+					+team(true, '2. Жена Дали', '13')
+					+team(true, '3. Битый пиксель', '12,33')
+					+team(true, '4. ТрИугольник', '12,33')
+					+team(true, '5. D-Geeks', '12,33')
+					+team(true, '6. Spensers Family', '12,33')
+					+team(true, '7. North designer', '12')
+					+team(true, '8. WAGON', '12')
+					+team(true, '9. Огонь', '11,67')
+					+team(true, '10. upGREATeam', '11,67')
+					+team(true, '11. 404', '10,33')
+					+team(true, '12. 4 Look', '10,33')
+					+team(true, '13. PuSHkinSquare', '10,33')
+					+team(true, '14. СемьБезЧетырех', '9,33')
+					+team(true, '15. ВАУ', '9')
+					+team(true, '16. WE', '9')
+					+team(true, '17. KMRZ.Branding&Design', '8,33')
+					+team(true, '18. SVARPL', '8,33')
+					+team(true, '19. Чтонетакто', '8')
+					+team(true, '20. Гиперкуб', '8')
+					+team(true, '21. Тюлень', '8')
+					+team(true, '22. Melston', '8')
+					+team(true, '23. FOR', '8')
+					+team(true, '24. Трамвай', '7,67')
+					+team(true, '25. Exactly!', '7,67')
+					
+					+team(false, '26. Deckel', '7,33')
+					+team(false, '27. CMYK', '7,33')
+					+team(false, '28. Нет предела совершенству', '6,67')
+					+team(false, '29. NeVsky', '6,33')
+					+team(false, '30. Люминарис', '6')
+					+team(false, '31. Чапаев и Шпатель', '6')
+					+team(false, '32. Freakshow', '6')
+					+team(false, '33. WemadeFOX', '6')
+					+team(false, '34. DreamBanana', '5,67')
+					+team(false, '35. КАРПЕ ДИЕМ', '5,33')
+					+team(false, '36. МРКХ', '5,33')
+					+team(false, '37. MachineGun', '5,33')
+					+team(false, '38. Брайтектор', '5,33')
+					+team(false, '39. ArchDesign', '4,67')
+					+team(false, '40. Ideamen', '4,67')
+					+team(false, '41. Графитация', '4')
+					+team(false, '42. Случайный Сверхорганизм', '4')
+					+team(false, '43. LAD`ies', '4')
+					+team(false, '44. BrandCompass', '3,33')
+					+team(false, '45. Артишок', '1')

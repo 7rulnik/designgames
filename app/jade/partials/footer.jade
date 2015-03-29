@@ -11,9 +11,9 @@ footer.footer
     .col-xs-4.footer__subscribe
       h4.footer__title Полезная рассылка
       p Оставь почту, чтобы первым<br>узнать о новостях, лекциях<br>и вакансиях у лидеров рынка.<br>Без спама.
-      form.footer__form
-        input.contacts__input.footer__input(placeholder='Ваша почта')
-        input.footer__submit(type='submit' value)
+      form.footer__form(role="form" method="post" action="/scripts/footer-process.php")
+        input#footer__email.contacts__input.footer__input(type='email' placeholder='Ваша почта' name='footerEmail' required)
+        input.footer__submit(type='submit' value  disabled)
       .footer__we
         a(href='http://gildfamily.ru/' target='_blank'): img.footer__we-img(src='/images/logo/logo_guild.svg')
         p.footer__we-text

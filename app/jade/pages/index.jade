@@ -42,26 +42,6 @@ block header
 							span.about__plus +
 						span.about__number-text работодателей
 block content
-	//- section.partners
-		.container
-			h2 Генеральные партнёры
-			.row
-				.col-xs-3
-					p лого
-					p лого
-					p лого
-				.col-xs-3
-					p лого
-					p лого
-					p лого
-				.col-xs-3
-					p лого
-					p лого
-					p лого
-				.col-xs-3
-					p лого
-					p лого
-					p лого
 	section.champ
 		.container
 			h2.champ__title План действий вашей команды
@@ -143,20 +123,32 @@ block content
 		.container
 			br
 			h3.partners__title Партнёры и организаторы
-			a(href='http://gildfamily.ru/' target='_blank'): img.partners__logo.partners__logo--guild(src='/images/logo/logo_guild-black.svg')
-			a(href='http://microsoft.com/ru-ru/default.aspx' target='_blank'): img.partners__logo.partners__logo--microsoft(src='/images/logo/logo_microsoft.svg') 
-			a(href='http://coca-colahellenic.ru' target='_blank'): img.partners__logo.partners__logo--coca-cola(src='/images/logo/logo_coca-cola.svg')
 			a(href='http://sutd.ru' target='_blank'): img.partners__logo.partners__logo--td(src='/images/logo/logo_sutd.svg')
-			//- .col-md-3
-			//- a: img.partners__logo(src='/images/logo/logo_microsoft.svg')
+			a(href='http://gildfamily.ru/' target='_blank'): img.partners__logo.partners__logo--guild(src='/images/logo/logo_guild-black.svg') 
+			a(href='http://coca-colahellenic.ru' target='_blank'): img.partners__logo.partners__logo--coca-cola(src='/images/logo/logo_coca-cola.svg')
+			a(href='http://microsoft.com/ru-ru/default.aspx' target='_blank'): img.partners__logo.partners__logo--microsoft(src='/images/logo/logo_microsoft.svg')
 			br
-			//- a(href='http://englishfirst.ru/englishfirst/default.aspx' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--ef(src='/images/logo/logo_ef.svg')
-			//- a(href='http://netology.ru' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--netologiya(src='/images/logo/logo_netologiya.svg')
 			a(href='http://veeam.com' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--veeam(src='/images/logo/logo_veeam.svg')
 			a(href='http://1.kuka.pro' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--kuka(src='/images/logo/logo_kuka.svg')
 			a(href='http://www.ikraikra.ru/spb/courses/?utm_source=DG_site&utm_medium=logo&utm_campaign=DG' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--ikra(src='/images/logo/logo_ikra.svg')
 			a(href='http://fb.com/artw.ru' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--artw(src='/images/logo/logo_artw.svg')
-			//- a(href=' http://label-men.com' target='_blank'): img.partners__logo.partners__logo--second-row.partners__logo--labelmen(src='/images/logo/logo_labelmen.svg')
+			br
+			a(href='http://brendson.com/' target='_blank'): img.partners__logo.partners__logo--thrid-row.partners__logo--brandson(src='/images/logo/logo_brandson.svg')
+			a(href='http://loftyourmind.ru/' target='_blank'): img.partners__logo.partners__logo--thrid-row(src='/images/logo/logo_loft.svg')
 	include ../partials/gallery.jade
-
-					
+//- 
+//- 					
+//- block var
+//- 	- var title = 'Техническое осблуживание'
+//- extends ../layout/default.jade
+//- block header
+//- 	//- include ../partials/navbar.jade
+//- block content
+//- 	section.soon
+//- 		.container
+//- 			img(src='/images/maintenance.svg')
+//- 			p.soon__text До объявления результатов
+//- 			.soon__timer.soon__timer--account
+			//- hr.case__divider.case__divider--soon
+			//- p P.S. А регистрация продолжается до 22 марта
+	

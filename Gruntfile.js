@@ -30,10 +30,10 @@ module.exports = function(grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-    //   bower: {
-    //     files: ['bower.json'],
-    //     tasks: ['wiredep']
-    //   },
+      //   bower: {
+      //     files: ['bower.json'],
+      //     tasks: ['wiredep']
+      //   },
       // js: {
       //   files: ['<%= config.app %>/scripts/{,*/}*.js'],
       //   tasks: ['jshint'],
@@ -210,7 +210,10 @@ module.exports = function(grunt) {
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
-            '<%= config.dist %>/*.{ico,png}'
+            '<%= config.dist %>/*.{ico,png}',
+            '<%= config.dist %>/files/**/*',
+            // '<%= config.dist %>/case/**/*',
+            // '!<%= config.dist %>/case/index.html'
           ]
         }
       }
@@ -232,10 +235,12 @@ module.exports = function(grunt) {
         assetsDirs: [
           '<%= config.dist %>',
           '<%= config.dist %>/images',
-          '<%= config.dist %>/styles'
+          '<%= config.dist %>/styles',
+          '<%= config.dist %>/case',
+          '<%= config.dist %>/files',
         ]
       },
-      html: ['<%= config.dist %>/{,*/}*.html'],
+      html: ['<%= config.dist %>/**/*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
@@ -272,12 +277,14 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/**/*.{webp,svg}',
+            'images/**/*.{webp,svg,png}',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*',
             'doc/**',
             'static/**',
-            'scripts/**/*.php'
+            'scripts/**/*.php',
+            'files/**',
+            'json/**'
           ]
         }, {
           expand: true,

@@ -1,0 +1,35 @@
+block var
+	- var title = 'Кейсы'
+	- var sections = true
+	//- - var sections = true
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.sections.sections--single
+		.container
+			img(src='/images/case.svg')
+			h3.sections__title Задания 2 этапа
+			p.sections__text.sections__text--adblock Перейдите в свою секцию для того, чтобы ознакомиться с заданием.<br>Решения принимаются до 31 марта 23:59 по московскому времени.
+			p Для корректной работы отключите AdBlock.
+			.row
+				a.sections__item--case.sections__item.sections__item--branding.col-xs-6(href='')
+					h3.sections__item-title Брендинг
+					p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+					p.sections__item-link <span>Смотреть задание</span>
+					
+				a.sections__item--case.sections__item.sections__item--interface.col-xs-6(href='')
+					h3.sections__item-title Интерфейсы
+					p.sections__item-about Секция для проектировщиков, веб-дизайнеров и разработчиков.
+					p.sections__item-link <span>Смотреть задание</span>
+				.clearfix
+					
+				a.sections__item--case.sections__item.sections__item--architecture.col-xs-6(href='')
+					h3.sections__item-title Архитектура<br>и интерьер
+					p.sections__item-about Секция для архитекторов и дизайнеров интерьера.
+					p.sections__item-link <span>Смотреть задание</span>
+					
+				a.sections__item--case.sections__item.sections__item--costume.col-xs-6(href='')
+					h3.sections__item-title Дизайн костюма
+					p.sections__item-about Секция для дизайнеров костюма и стилистов.
+					p.sections__item-link <span>Смотреть задание</span>

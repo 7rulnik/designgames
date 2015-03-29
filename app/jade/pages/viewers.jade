@@ -1,0 +1,223 @@
+block var
+	- var title = 'Зрителям'
+	-  var viewers = true
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section.viewers
+		.container
+			#filters
+				button.viewers__link.viewers__filter.viewers__filter--active(data-filter=".viewers__item--willbe") Будущие лекции
+				button.viewers__link.viewers__filter(data-filter=".viewers__item--complete") Прошедшие
+				button.viewers__link.viewers__filter(data-filter="*") Все
+			hr.case__divider.viewers__divider2
+			.lections
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--1
+						p.viewers__name Алёна Зобова
+						p.viewers__who
+							|Выпускающий редактор журнала 
+							a.viewers__link(href='http://dscd.ru/' target='_blank') DRESS CODE
+						.likely.likely-small.likely-light(data-title="Лекция «Фешн-дизайнер в глянцевом журнале»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Фешн-дизайнер в глянцевом журнале»
+							hr.viewers__divider
+							p.
+								Вы узнаете о концептуальных отличиях в глянцевых изданий,
+								<br>тематических журналах и нишевых проектах, портрете целевой
+								<br>аудитории. Поговорим о формирование контента, узнаем,
+								<br>как дизайнеру попасть в журнал. Расскажем: как журнал влияет
+								<br>на продажи коллекций дизайнеров, что будет модным в этом году.
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://www.youtube.com/watch?v=vOXeo390Uds&feature=youtu.be' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/lektsiya_alyony_zobovoy_feshn-dizayner_v_glyantsevom_zhurnale' target='_blank') Обзор лекции на сайте «Гильдии»
+				
+				
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--4
+						p.viewers__name София Будишевская
+						p.viewers__who
+							|Арт-директор интернет-агентства 
+							a.viewers__link(href='http://www.ralegion.ru/' target='_blank') Легион
+						.likely.likely-small.likely-light(data-title="Лекция «Восприятие продукта через дизайн»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Восприятие продукта через дизайн»
+							hr.viewers__divider
+							p.
+								Вы узнаете, что такое дизайнерский мазохизм: боль или результат.
+								<br>Мы поговорим о восприятии товаров через дизайн
+								<br>и о социальных группах и их маркерах в визуальной<br>коммуникации с брендами.
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://youtu.be/3J43vwQD0a8' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/vospriyatie_produkta_cherez_dizayn' target='_blank') Обзор лекции на сайте «Гильдии»
+							
+							
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--5
+						p.viewers__name Майя Арутюнян
+						p.viewers__who
+							|Руководитель проектов агентства 
+							a.viewers__link(href='http://brendson.com/' target='_blank') Brandson
+						.likely.likely-small.likely-light(data-title="Лекция «Тайны работы с заказчиком: как понять задачу и правильно её выполнить»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Тайны работы с заказчиком: как понять<br>задачу и правильно её выполнить»
+							hr.viewers__divider
+							p.
+								Мы затронем такие аспекты проектной работы, как взаимодействие
+								<br>в команде, эффективное планирование и современные принципы
+								<br>тайм-менеджмента, правильная постановка задач креативной
+								<br>группе, схеме управления проектами, ключевые точки контроля
+								<br>и многие другие.
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://youtu.be/ssTYw4tN_WQ' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/ayny_raboty_s_zakazchikom:_kak_ponyat_zadachu_i_pravilno_eyo_vypolnit' target='_blank') Обзор лекции на сайте «Гильдии»
+				
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--2
+						p.viewers__name Алина Рукосуева
+						p.viewers__who
+							|Арт-директор агентства 
+							a.viewers__link(href='http://www.dochery.ru/' target='_blank') Дочери
+						.likely.likely-small.likely-light(data-title="Лекция + Воркшоп «Упаковка с человеческим лицом»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция + Воркшоп
+							h2.viewers__event «Упаковка с человеческим лицом»
+							hr.viewers__divider
+							p.
+								Мы обсудим такие понятия, как категорийность, поговорим
+								<br>о работе со структурой и формой, узнаем, что такое стереотипы
+								<br>потребительского восприятия упаковки и как их можно
+								<br>избегать, и при этом создавать продукт, который будет
+								<br>продаваться. Выполним практическое задание и обсудим
+								<br>его результаты.
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='http://www.youtube.com/watch?v=GDBw18TFIak&feature=youtu.be' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/upakovka_s_chelovecheskim_litsom' target='_blank') Обзор лекции на сайте «Гильдии»
+				
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--3
+						p.viewers__name Никита Ефимов
+						p.viewers__who
+							|UX Designer в 
+							a.viewers__link(href='https://selectel.ru/' target='_blank') Selectel.ru
+						.likely.likely-small.likely-light(data-title="Лекция «Процесс проектирования интерфейса: зачем нужен этап анализа?»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Процесс проектирования интерфейса:<br>зачем нужен этап анализа?»
+							hr.viewers__divider
+							p.
+								Из выступления вы узнаете про основные этапы проектирования
+								<br>интерфейса продукта и какую роль в этом процессе играет
+								<br>этап анализа. Поймёте какие инструменты и подходы
+								<br>нужно применять на данном этапе (плюсы/минусы).
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							//- a.viewers__link.viewers__link--map(href='https://www.youtube.com/watch?v=vOXeo390Uds&feature=youtu.be' target='_blank') Видеозапись с мероприятия<br>
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--map(href='http://www.gildfamily.ru/blog/protsess_proektirovaniya_interfeysa:_zachem_nuzhen_etap_analiza' target='_blank') Обзор лекции на сайте «Гильдии»
+				
+				
+				section.viewers__item.viewers__item--complete
+					.viewers__photo.viewers__photo--7
+						p.viewers__name Братья Жилины
+						p.viewers__who
+							|Руководители студии 
+							a.viewers__link(href='http://zhilins.ru/ru' target='_blank') Братья Жилины
+						.likely.likely-small.likely-light(data-title="Лекция «Как открыть свою студию дизайна интерьеров»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Как открыть свою студию дизайна интерьеров»
+							hr.viewers__divider
+							p.
+								Мы обсудим традиционные и альтернативные варианты начала
+								<br>своего пути. Вы узнаете, где взять своих первых клиентов,
+								<br>как выстроить с ними работу таким образом, чтобы результатом
+								<br>остались довольны все участники проекта. Мы расскажем вам
+								<br>о том, что важно при старте, а также чему можно уделить своё время
+								<br>после того, как вы крепко будете стоять на ногах. 
+						.viewers__when
+							date.viewers__date.viewers__date--complete Лекция завершена
+							//- p.viewers__address Санкт-Петербург, Вознесенский проспект 44-46
+							//- a.viewers__link.viewers__link--map(href='http://maps.yandex.ru/?um=lhkLDePa8oJA4fQDKWmp2yL6aM0_uptv&ll=30.308187%2C59.920822&spn=0.005043%2C0.001613&z=18&l=map' target='_blank') Посмотреть на карте
+							//- p.viewers__reg Вход строго по спискам — требуется регистрация на мероприятие
+							//- a.viewers__btn(href='https://docs.google.com/forms/d/1t1FNwAapjkUOWHZERocUR-658zmhnBEvcLvIZgh4d2w/viewform' target='_blank') Зарегистрироваться
+				
+				
+				section.viewers__item.viewers__item--willbe
+					.viewers__photo.viewers__photo--6
+						p.viewers__name Екатерина Юлина
+						p.viewers__who
+							|Старший проектировщик 
+							a.viewers__link(href='http://pavlova.cc/' target='_blank') Собаки Павловой
+						.likely.likely-small.likely-light(data-title="Лекция «Проектирование историй в интерфейсах»")
+							.twitter Твитнуть
+							.facebook Поделиться
+							.vkontakte Поделиться
+					.viewers__text
+						.viewers__about
+							p.viewers__type Лекция
+							h2.viewers__event «Проектирование историй в интерфейсах»
+							hr.viewers__divider
+							p.
+								Ты дизайнер и задумывался над тем, как создать удобный, красивый
+								<br>и функциональный интерфейс? Давай-ка, дружок, поймём для начала,
+								<br>что является основой интерфейса. Конечно же, хорошая история.
+								<br>Убедительно рассказанная история — убедительный интерфейс. Так,
+								<br>что же такое история в интерфейсе? Почему надо её рассказывать?
+								<br>Как историю сделать убедительной? Как презентовать результат?
+						.viewers__when
+							date.viewers__date 30 марта, 18:00
+							p.viewers__address Санкт-Петербург, Большая морская 18, 436 аудитория
+							a.viewers__link.viewers__link--map(href='http://maps.yandex.ru/?um=lhkLDePa8oJA4fQDKWmp2yL6aM0_uptv&ll=30.308187%2C59.920822&spn=0.005043%2C0.001613&z=18&l=map' target='_blank') Посмотреть на карте
+							p.viewers__reg Вход строго по спискам — требуется регистрация на мероприятие
+							a.viewers__btn(href='https://docs.google.com/forms/d/1Qy35qa7sD57xbaF0sR_7vHPzgiMzr3H_tD3lXAfcHd4/viewform' target='_blank') Зарегистрироваться
+	

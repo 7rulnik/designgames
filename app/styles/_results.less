@@ -1,0 +1,25 @@
+.results {
+  width: 980px;
+  .text-center;
+  thead {
+    color: #1f1f1f;
+  }
+  td {
+    height: 72px;
+    border-bottom: 2px solid rgba(236,236,236,0.05);
+  }
+  &__header, &__loser {
+    color: #3f3f3f;
+  }
+  &__team {
+    .text-left;
+  }
+  &__winner {
+    background: url("../images/winner.svg") no-repeat;
+    background-position: center;
+    width: 60px;
+    &--none {
+      background: none;
+    }
+  }
+}

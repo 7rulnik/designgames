@@ -1,0 +1,34 @@
+block var
+	- var title = 'Результаты'
+	- var task = true
+	//- - var sections = true
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.sections.sections--single
+		.container
+			img(src='/images/case.svg')
+			h3.sections__title Результаты 1 этапа
+			p.sections__text Перейдите в свою секцию для того, чтобы ознакомиться с результатами.
+			.row
+				a.sections__item.sections__item--branding.col-xs-6(href='/results/branding.html')
+					h3.sections__item-title Брендинг
+					p.sections__item-about  Секция для графических дизайнеров и маркетологов.
+					p.sections__item-link <span>Смотреть результаты</span>
+					
+				a.sections__item.sections__item--interface.col-xs-6(href='/results/interface.html')
+					h3.sections__item-title Интерфейсы
+					p.sections__item-about Секция для проектировщиков, веб-дизайнеров и разработчиков.
+					p.sections__item-link <span>Смотреть результаты</span>
+				.clearfix
+					
+				a.sections__item.sections__item--architecture.col-xs-6(href='/results/architecture.html')
+					h3.sections__item-title Архитектура<br>и интерьер
+					p.sections__item-about Секция для архитекторов и дизайнеров интерьера.
+					p.sections__item-link <span>Смотреть результаты</span>
+					
+				a.sections__item.sections__item--costume.col-xs-6(href='/results/costume.html')
+					h3.sections__item-title Дизайн костюма
+					p.sections__item-about Секция для дизайнеров костюма и стилистов.
+					p.sections__item-link <span>Смотреть результаты</span>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="40px" viewBox="0 0 50 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="6_block" sketch:type="MSLayerGroup" transform="translate(-695.000000, -790.000000)" fill="#C7A95F">
+            <g id="gifts-+-gifts-2" transform="translate(620.000000, 348.000000)" sketch:type="MSShapeGroup">
+                <g id="gifts-2" transform="translate(0.000000, 362.000000)">
+                    <g id="1">
+                        <g id="laptop" transform="translate(75.000000, 80.000000)">
+                            <path d="M49.385,34.0775 C48.7675,33.15 45,27.5 45,27.5 L45,5 C45,2.245 42.75,0 40,0 L10,0 C7.2475,0 5,2.245 5,5 L5,27.5 C5,27.5 1.2325,33.15 0.615,34.0775 C0,35 0,35.5325 0,36.25 L0,37.5 C0,38.75 1.25,40 2.4975,40 L47.5025,40 C48.75,40 50,38.75 50,37.5 L50,36.25 C50,35.5325 50,35 49.385,34.0775 L49.385,34.0775 Z M17.5,35 L19,32.5 L31,32.5 L32.5,35 L17.5,35 L17.5,35 Z M40,25 L10,25 L10,5 L40,5 L40,25 L40,25 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

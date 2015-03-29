@@ -7,14 +7,24 @@ nav.navbar
 						else
 								li: a.nav__link(href="/") О чемпионате 2015
 						if sections
-								li: a.nav__link.nav__link--active(href="/sections/") Секции
+								li: a.nav__link.nav__link--active(href="/case/") Задания 2 этапа
 						else
-								li: a.nav__link(href="/sections/") Секции
+								li: a.nav__link(href="/case/") Задания 2 этапа
 						//- li: a.nav__link(href="#") Участники
 						//- li: a.nav__link(href="#") Результаты
-						li: a.nav__link(href="/soon.html") Зрителям
+						if task
+							li: a.nav__link.nav__link--active(href="/results/") Результаты
+						else
+							li: a.nav__link(href="/results/") Результаты
+						if viewers
+							li: a.nav__link.nav__link--active(href="/viewers.html") Лекции
+						else
+							li: a.nav__link(href="/viewers.html") Лекции
 						li: a.nav__link(href="/soon.html") День карьеры
-						li: a.nav__link(href="/soon.html") Партнёры
+						if partners
+							li: a.nav__link.nav__link--active(href="/partners.html") Партнёры
+						else
+							li: a.nav__link(href="/partners.html") Партнёры
 						if contacts
 							li: a.nav__link.nav__link--active(href="/contacts.html") Контакты
 						else

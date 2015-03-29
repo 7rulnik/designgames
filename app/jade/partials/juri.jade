@@ -1,20 +1,72 @@
 section.juri
-  .container
-    h3.juri__title Жюри
-    .row
-      .juri__item
-        img(src='/images/juri.svg')
-        h6.juri__name *Username*
-        p.juri__about Публикация 10 марта
-      .juri__item
-        img(src='/images/juri.svg')
-        h6.juri__name *Username*
-        p.juri__about Публикация 10 марта
-      .juri__item
-        img(src='/images/juri.svg')
-        h6.juri__name *Username*
-        p.juri__about Публикация 10 марта
-      .juri__item
-        img(src='/images/juri.svg')
-        h6.juri__name *Username*
-        p.juri__about Публикация 10 марта
+	.container
+		h3.juri__title Жюри
+		.row
+			if branding
+				.juri__item.juri__item--branding
+					img(src='/images/juri/branding-1.png')
+					h6.juri__name Ольга Рушневская
+					p.juri__about Основатель проекта<br>«Loft Your Mind»
+				.juri__item.juri__item--branding
+					img(src='/images/juri/branding-2.png')
+					h6.juri__name Майя Арутюнян
+					p.juri__about Руководитель проектов<br>брендингового агентства<br>«Brandson»
+				.juri__item.juri__item--branding
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Публикация 17 марта
+				.juri__item.juri__item--branding
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Публикация 17 марта
+			else if interface
+				.juri__item
+					img(src='/images/juri/interface-1.png')
+					h6.juri__name Ирина Титарекно
+					p.juri__about Директор компании «ARTW»
+				.juri__item
+					img(src='/images/juri/interface-2.png')
+					h6.juri__name Ярослав Шаповалов
+					p.juri__about Креативный директор<br>компании «ARTW»
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Карина Горбунова
+					p.juri__about Публикация 17 марта
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Представитель компании<br>«Microsoft»
+			else if costume
+				.juri__item
+					img(src='/images/juri/costume-1.png')
+					h6.juri__name Диана Ти
+					p.juri__about Координатор партнёрских<br>программ «FREEDOM TEAM»
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Публикация 17 марта
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Публикация 17 марта
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Сюрприз
+					p.juri__about Публикация 17 марта
+			else if architecture
+				.juri__item
+					img(src='/images/juri.svg')
+					h6.juri__name Карина Горбунова
+					p.juri__about Представитель компании<br>«Coca-Cola Hellenic»
+				.juri__item
+					img(src='/images/juri/architecture-2.png')
+					h6.juri__name Фёдор Миронов
+					p.juri__about Директор «Архитектурной<br>мастерской Миронова»
+				.juri__item
+					img(src='/images/juri/architecture-3.png')
+					h6.juri__name Михаил Жилин
+					p.juri__about Руководитель студии<br>«Братья Жилины»
+				.juri__item
+					img(src='/images/juri/architecture-4.png')
+					h6.juri__name Елена Коновалова
+					p.juri__about Ведущий дизайнер и учредитель<br>студии «Привилегия» 

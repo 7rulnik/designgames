@@ -1,0 +1,75 @@
+block var
+	- var title = 'Результаты 1-го этапа секции «Архитектура и интерьер»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+	else
+		tr.results__loser
+			td
+			td.results__team= team
+			td
+			td
+			td
+			td
+			td
+			td= scores
+block content
+	section.case
+		.container
+			h1.case__heading Результаты 1-го этапа секции «Архитектура и интерьер»
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team.results__header Команда
+						td Креативность
+						td Исполнение
+						td Презентация
+						td Соответствие ЦА
+						td Глубина анализа
+						td.results__header Общая оценка
+				tbody
+					+team(true, '1. Ё', '12')
+					+team(true, '2. Deadline', '11,75')
+					+team(true, '3. OrenDIS', '10,25')
+					+team(true, '4. Фокус', '9,75')
+					+team(true, '5. A4', '9,75')
+					+team(true, '6. BORSHCH', '9,5')
+					+team(true, '7. KVADRAT group', '9,5')
+					+team(true, '8. Power mind', '9,5')
+					+team(true, '9. LOFT', '9,25')
+					+team(true, '10. CO&CO', '9')
+					+team(true, '11. KRTN', '9')
+					+team(true, '12. 4makers', '8,5')
+					+team(true, '13. Archi-T', '8,25')
+					+team(true, '14. VAM', '8,25')
+					+team(true, '15. Алабастр', '8')
+					+team(true, '16. Asimptota.inc', '8')
+					+team(true, '17. S.E.A.Arch', '8')
+					+team(true, '18. Красный конь', '7,5')
+					+team(true, '19. UnicornPower', '7')
+					+team(true, '20. AMVO', '6,5')
+					+team(true, '21. Three points ', '6,5')
+					+team(true, '22. Хай-тек', '6')
+					+team(true, '23. Flipside', '6')
+					+team(true, '24. Time of art', '5,25')
+					+team(true, '25. Арт_Подход', '4,5')
+					+team(true, '26. NBOX', '4,5')
+					
+					+team(false, '27. Имбирь', '4,25')
+					+team(false, '28. Квадрум', '4')
+					+team(false, '29. Art building', '4')
+					+team(false, '30. Лакмус', '3,75')
+					+team(false, '31. SEMEN', '2,25')
+					+team(false, '32. Ideya fix', '1,75')

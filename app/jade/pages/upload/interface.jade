@@ -1,0 +1,23 @@
+block var
+	- var title = 'Интерфейсы - загрузка работы'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+block content
+	section.case
+		.container
+			h1.case__heading Загрузка вашей работы — секция «Интерфейсы»
+			form.case__form
+				input(type="text" placeholder="Название команды" required class="contacts__input footer__input case__input--team")
+				input(type="email" placeholder="Ваша почта" required class="contacts__input footer__input case__input--email")
+				p Загрузите архив на любой файловый хостинг и прикрепите ссылку на него в поле ниже.
+				input(type="text" placeholder="Ссылка на архив" required class="contacts__input footer__input case__input--link")
+				br
+				input(type="submit" value="Отправить на проверку" disabled class="contacts__submit case__submit")
+			hr.case__divider
+			h3.case__curator Куратор секции
+			p Возник вопрос? Обращайтесь к куратору вашей секции.
+			img.curator__img(src='/images/people/5.png')
+			.curator__who
+				p.curator__name.curator__name--case Иван Замечательный
+				a.curator__email(href='mailto: ivan.u@designgames.ru') ivan.u@designgames.ru

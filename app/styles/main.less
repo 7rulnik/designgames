@@ -20,6 +20,9 @@
 @import "_reviews.less";
 @import "_gallery.less";
 @import "_footer.less";
+@import "_viewers.less";
+@import "_case.less";
+@import "_results.less";
 @import "/bower_components/slick.js/slick/slick.css";
 @import "/bower_components/slick.js/slick/slick-theme.css";
 @border-radius-base: 0;
@@ -43,4 +46,20 @@
 /* } */
 h2 {
 	font-size: 40px;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
 }
