@@ -1,0 +1,66 @@
+block var
+	- var title = 'Результаты 2-го этапа секции «Дизайн костюма»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, score5, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты 2-го этапа секции «Дизайн костюма»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/costume.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/costume-final.html') Результаты финала
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Худ.<br>решение
+						td Соответствие<br>заданию
+						td Подбор<br>материалов
+						td Конструкторское<br>решение
+						td Глубина<br>анализа
+						td.results__total.results__header Общая<br>оценка
+				tbody
+					+team(true, '1. IB4', '2,5', '2,5', '2,75', '2,75', '1,75', '12,25')
+					+team(true, '2. Фэшн на Урале не дремлет', '3', '2,5', '2,25', '2,25', '2', '12')
+					+team(true, '3. Dark Cyan', '2,75', '2', '1,5', '2,25', '2,5', '11')
+					+team(true, '4. Sidera', '2,75', '1,75', '1,75', '2', '2,25', '10,75')
+					+team(true, '5. #295', '2,5', '1,75', '1,5', '2,5', '2,25', '10,5')
+					+team(false, '6. Дизайн-группа РБИУ', '2', '2', '2', '2,25', '2,25', '10,5')
+					
+					+team(true, '7. Кипиш Мод', '2,5', '2,25', '1,75', '2', '1,75', '10,25')
+					+team(false, '8. КУТЮРЬЁZ', '2,5', '2,5', '1,25', '2', '2', '10,25')
+					+team(false, '9. Ой, все!', '2', '1,75', '2', '2,25', '1,75', '9,75')
+					+team(false, '10. Клан', '1,75', '1,75', '1,5', '1,75', '2,25', '9')
+					
+					+team(false, '11. За РАМки', '1,25', '2,25', '1,75', '1,75', '1,5', '8,5')
+					+team(false, '12. Дизайн или Смерть', '2', '2', '1,25', '1', '2', '8,25')
+					+team(false, '13. Петербургский квартет', '1,75', '1,5', '1,25', '1,75', '1,75', '8')
+					+team(false, '14. Empress', '2,5', '2', '1,25', '0,75', '1,5', '8')
+					+team(false, '15. RFT', '2', '1,75', '1,5', '0,75', '2', '8')
+					
+					+team(false, '16. 4art', '1,25', '1,5', '1', '2', '1', '6,75')
+					+team(false, '17. Pi crew', '1', '1,25', '1,25', '0,75', '1,5', '5,75')

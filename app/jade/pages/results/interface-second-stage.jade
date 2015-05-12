@@ -1,0 +1,55 @@
+block var
+	- var title = 'Результаты 2-го этапа секции «Интерфейсы»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, score5, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты 2-го этапа секции «Интерфейсы»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/interface.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/interface-final.html') Результаты финала
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Удобство
+						td Исполнение
+						td Презентация
+						td Соответствие<br>ЦА
+						td Глубина<br>анализа
+						td.results__total.results__header Общая<br>оценка
+				tbody
+					+team(true, '1. Люди, которые сразу', '2', '2,2', '2,8', '2,6', '2,4', '12')
+					+team(true, '2. GUM', '2,6', '3', '2', '2', '2', '11,6')
+					+team(true, '3. Арктика', '2,2', '2,2', '2,4', '2,2', '2,6', '11,6')
+					+team(true, '4. Own Style', '2,2', '1,8', '1,8', '2,4', '2,8', '11')
+					+team(true, '5. Arax', '1,8', '1,8', '2,6', '1,8', '1,8', '9,8')
+					+team(true, '6. BreadCrumbs', '1,8', '2', '2,4', '1,8', '1,6', '9,6')
+					
+					+team(false, '7. F13', '1,8', '2,4', '2,2', '1,4', '1,4', '9,2')
+					+team(false, '8. Взрывпакет', '1,4', '2', '1,4', '0,8', '1,2', '6,8')

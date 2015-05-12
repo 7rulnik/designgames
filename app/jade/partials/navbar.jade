@@ -7,20 +7,20 @@ nav.navbar
 						else
 								li: a.nav__link(href="/") О чемпионате 2015
 						if sections
-								li: a.nav__link.nav__link--active(href="/case/") Задания 2 этапа
+								li: a.nav__link.nav__link--active(href="/sections/") Секции
 						else
-								li: a.nav__link(href="/case/") Задания 2 этапа
+								li: a.nav__link(href="/sections/") Секции
 						//- li: a.nav__link(href="#") Участники
 						//- li: a.nav__link(href="#") Результаты
-						if task
-							li: a.nav__link.nav__link--active(href="/results/") Результаты
-						else
-							li: a.nav__link(href="/results/") Результаты
 						if viewers
 							li: a.nav__link.nav__link--active(href="/viewers.html") Лекции
 						else
 							li: a.nav__link(href="/viewers.html") Лекции
-						li: a.nav__link(href="/soon.html") День карьеры
+						if task
+							li: a.nav__link.nav__link--active(href="/results/") Результаты
+						else
+							li: a.nav__link(href="/results/") Результаты
+						//- li: a.nav__link(href="/soon.html") День карьеры
 						if partners
 							li: a.nav__link.nav__link--active(href="/partners.html") Партнёры
 						else
@@ -29,6 +29,8 @@ nav.navbar
 							li: a.nav__link.nav__link--active(href="/contacts.html") Контакты
 						else
 							li: a.nav__link(href="/contacts.html") Контакты
+						li: a.festival__btn.festival__btn--white.festival__btn--navbar(href='/festival.html') Фестиваль 8–12 апреля
+						
 						//- <li class="dropdown">
 						//-   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
 						//-   <ul class="dropdown-menu" role="menu">

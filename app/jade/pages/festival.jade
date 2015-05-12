@@ -1,0 +1,321 @@
+block var
+	- var title = 'Фестиваль «Игры дизайнеров»'
+extends ../layout/default.jade
+block header
+	include ../partials/navbar.jade
+block content
+	section.festival__header
+		.container
+			h1.festival__title Фестиваль<br>«Игры дизайнеров»
+			p.festival__title-text Перевернём твоё представление об индустрии
+			p.festival__when Санкт-Петербург, 8–12 апреля, 2015
+			.festival__likely.likely.likely-light
+				.twitter Твитнуть
+				.facebook Поделиться
+				.vkontakte Поделиться
+			ul.festival__nav
+				li: a(href='#finals') Финалы
+				li: a(href='#forum') Образовательный форум
+				li: a(href='#fair') Ярмарка вакансий
+				li: a(href='#party') Дизайн-Вечеринка
+				li: a(href='#where') Где проходит?
+			.festival__timer
+			span.festival__timer-text до конца регистрации на фестиваль
+			br
+			a.festival__btn.festival__btn--white.festival__btn--header(href='#participation') Принять участие
+		
+	//- второй блок
+	section.festival__about
+		.container
+			p.festival__about-text.
+				В течение фестиваля пройдут: финалы чемпионата, общение с работодателями,
+				<br>образовательный форум, ярмарка вакансий и дизайн-вечеринка.
+				<br>Цель — популяризация и развитие рынка дизайна.
+			hr.festival__about-divider
+			h2.festival__about-title Миссия
+			p.festival__about-title-text.
+				Мы считаем, что взаимное обогащение опытом и знаниями в разных сферах
+				<br>поспособствует развитию рынка дизайна в целом.
+			.festival__about-item
+				img(src='/images/festival/icon_branding.svg')
+				p Брендинг
+			.festival__about-item
+				img(src='/images/festival/icon_design.svg')
+				p Веб-дизайн
+			.festival__about-item
+				img(src='/images/festival/icon_graphic.svg')
+				p Графика
+			.festival__about-item
+				img(src='/images/festival/icon_costume.svg')
+				p Костюм
+			.festival__about-item
+				img(src='/images/festival/icon_architecture.svg')
+				p Архитектура
+			.festival__about-item
+				img(src='/images/festival/icon_it.svg')
+				p IT
+					
+				//- третий блок
+	section#finals.festival__finals
+		.container
+			h2.festival__finals-title Финалы по направлениям
+			p.
+				В течение 4-х дней пройдут финалы чемпионата «III Игры дизайнеров». Зрители смогут
+				<br>пообщаться с работодателями из digital-агентств и насладиться проектами команд.
+			mixin ticket(section, date, time, place, company)
+				hr.festival__finals-divider
+				.festival__ticket-row
+					.festival__ticket()&attributes(attributes)
+						p Финал секции
+							br
+							span= section
+						p.festival__ticket-date Дата
+							br
+							span= date
+						p.festival__ticket-date Время
+							br
+							span= time
+						p Место
+							br
+							span(class='festival__ticket-place')!= place
+					.festival__ticket-registration
+						p.
+							Вход на мероприятие
+							<br>свободный. Количество
+							<br>мест ограничено.Требуется
+							<br>пройти регистрацию.
+						a.festival__btn.festival__btn--gold.festival__btn--ticket(href='https://docs.google.com/forms/d/1YnO7e4SUUGbZxFxZQ3327oFydlX3z30SXp2oLiA_PR4/viewform' target='_blank') Зарегистрироваться
+				p(class='festival__ticket-defense')!= company
+			+ticket('Брендинг', '8 апреля', '18:00', 'Вознесенский пр-т, д. 44-46,<br>Городской студенческий центр.<br><a href="/images/map/voznes.pdf" target="_blank">Схема проезда</a>', 'Защита кейсов от компаний: <a href="http://www.ikraikra.ru/spb/courses/?utm_source=DG_site&utm_medium=logo&utm_campaign=DG" target="_blank">IKRA</a>, <a href="http://loftyourmind.ru/" target="_blank">LoftYourMind</a>, <a href="http://brendson.com/" target="_blank">Brandson</a>')(class='festival__ticket--branding')
+			
+			+ticket('Интерфейсы', '9 апреля', '18:00', 'Гражданский пр-т, д. 28,<br>ИМОП, 2 этаж. <a href="/images/map/imop.pdf" target="_blank">Схема проезда</a>', 'Защита кейсов от компаний: <a href="http://kuka.pro/" target="_blank">«Кузница Кадров»</a>, <a href="http://www.microsoft.com/ru-ru/default.aspx">Microsoft</a>')(class='festival__ticket--interface')
+			
+			+ticket('Дизайн костюма', '10 апреля', '18:00', 'Вознесенский пр-т, д. 44-46,<br>Городской студенческий центр.<br><a href="/images/map/voznes.pdf" target="_blank">Схема проезда</a>', 'Защита кейсов от компаний: <a href="http://www.madwave.ru/ru" target="_blank">Mad Wave</a>, <a href="http://zarina.ru/" target="_blank">ZARINA</a>')(class='festival__ticket--costume')
+			
+			+ticket('Архитектура и интерьер', '11 апреля', '18:00', 'Гражданский пр-т, д. 28,<br>ИМОП, 2 этаж. <a href="/images/map/imop.pdf" target="_blank">Схема проезда</a>', 'Защита кейсов от компаний: <a href="http://www.coca-colahellenic.ru/" target="_blank">Hellenic Coca-Cola</a>, <a href="http://privilege.spb.ru/" target="_blank">Privilege</a>')(class='festival__ticket--architecture')
+	
+	section.festival__close
+		.container
+			h2.festival__close-title 12 апреля, закрытие чемпионата
+			p.festival__close-where площадка «Скороход»
+			.festival__close-item
+				img(src='/images/festival/close_1.svg')
+				p Форум: 8 экспертов<br>из разных сфер дизайна
+			.festival__close-item
+				img(src='/images/festival/close_2.svg')
+				p 350+ участников<br>со всей страны
+			.festival__close-item
+				img(src='/images/festival/close_3.svg')
+				p Общение<br>с работодателями
+			.festival__close-item
+				img(src='/images/festival/close_4.svg')
+				p Дизайн-вечеринка<br>и полезные связи
+	
+	
+	section#forum.festival__forum
+		.container
+			mixin people(name, who, theme)
+				//- attributes == {src: '/images/festival/'}
+				.festival__forum-people
+					//- img(src!=attributes.src)
+					block
+					p.festival__forum-name!= name
+					p.festival__forum-who!= who
+					hr.festival__forum-divider
+					p.festival__forum-theme!= theme
+			h2.festival__forum-title Форум: Развитие себя через проекты
+			p.festival__forum-date 11:00–17:30
+			p.festival__forum-about.
+				Мы пригласили спикеров и объединили все выступления одной общей темой, которая
+				<br>будет полезна всем: от графических дизайнеров до дизайнеров костюма
+				<br>и архитекторов.
+			.row
+				+people('Валентин Борисов', 'основатель подкаст-терминала Podster.ru (Санкт-Петербург)', 'Эффективная стратегия профессионального развития')
+					a(target='_blank' href='http://podster.fm/')
+						img(src='/images/festival/people_1.png')
+				+people('Ирина Васютенко', 'директор по маркетингу магазина одежды Zarina (Санкт-Петербург)', 'Как попасть в мир Fashion крупных компаний')
+					a(target='_blank' href='http://zarina.ru/')
+						img(src='/images/festival/people_2.png')
+				+people('Покрас Лампас', 'Modern Calligraphy Artist', 'Воркшоп по каллиграфии')
+					a(target='_blank' href='https://vk.com/ilovepokras')
+						img(src='/images/festival/people_10.png')
+				.clearfix
+				br
+				br
+				br
+				+people('Юлия Мархадаева', 'руководитель веб-разработки в&nbsp;агентстве Nimax', 'Всё, что нужно знать о&nbsp;самообучении и&nbsp;развитии своих навыков')
+					a(target='_blank' href='http://nimax.ru/')
+						img(src='/images/festival/people_9.png')
+				+people('Дмитрий Чута', 'арт-директор студии Chapps<br>(Украина, Одесса)', 'Как продать себя и начать получать заказы')
+					a(target='_blank' href='https://dribbble.com/chapps')
+						img(src='/images/festival/people_5.png')
+				+people('Наталья Солдатова', 'руководитель «Дома моды Натальи Солдатовой» (Санкт-Петербург)', 'Построение бренда в сфере моды или как стать известным дизайнером')
+					a(target='_blank' href='http://www.soldanata.ru/ ')
+						img(src='/images/festival/people_6.png')
+				.clearfix
+				br
+				br
+				br
+				+people('Алексей Ёжиков', 'консультант по интернет-маркетингу и&nbsp;директор по развитию Ruward', 'Интернет-маркетинг торт')
+					a(target='_blank' href='http://www.ruward.ru/')
+						img(src='/images/festival/people_7.png')
+				+people('Маргарита Васильева', 'руководитель бренд-консалтинговой фирмы «Паприка брендинг»', 'Сходство и различие работ в&nbsp;жанре B2B и B2C. Секрет эффективности')
+					a(target='_blank' href='http://www.paprika.ru/')
+						img(src='/images/festival/people_8.png')
+			.festival__forum-presentation
+				p.festival__forum-presentation-text Презентация 4-х лучших проектов<br>с чемпионата «III Игры дизайнеров»
+				//- a.festival__btn.festival__btn--gold.festival__btn--presentation Подробная программа
+	
+	section#fair.festival__vacancy
+		.container
+			h2.festival__vacancy-title Ярмарка вакансий
+			p.festival__vacancy-time 17:30-19:00
+			p.festival__vacancy-about.
+				Ярмарка вакансий — диалог работодателя и соискателя. Здесь участники
+				<br>фестиваля смогут ознакомиться с предложенными вариантами работы,
+				<br>стажировок, практик и другими возможностями компаний.
+			//- a(href='http://label-men.com/' target='_blank')
+				img(src='/images/festival/logo_labelmen.svg')
+			//- a(target='_blank' href='http://www.ikraikra.ru/spb/courses/?utm_source=DG_site&utm_medium=logo&utm_campaign=DG')
+				img(src='/images/festival/logo_ikra.svg')
+			//- a(target='_blank' href='http://artw.ru/')
+				img(src='/images/festival/logo_artw.svg')
+			a(target='_blank' href='http://www.artlebedev.ru/')
+				img(src='/images/festival/logo_artlebedev.svg')
+			a(target='_blank' href='http://obrisovka.com/')
+				img(src='/images/festival/logo_obrisovka.svg')
+			a(target='_blank' href='http://www.gaga.ru/')
+				img(src='/images/festival/logo_gaga.svg')
+			a(target='_blank' href='http://www.piter.com/')
+				img(src='/images/festival/logo_piter.svg')
+			//- a(target='_blank' href='http://kuka.pro/')
+				//- img(src='/images/festival/logo_.svg')
+			a(target='_blank' href='http://www.englishfirst.ru/englishfirst/cities/stpetersburg.aspx')
+				img(src='/images/festival/logo_ef.svg')
+			br
+			a(target='_blank' href='http://kuka.pro/')
+				img(src='/images/festival/logo_kuka.svg')
+			a(target='_blank' href='http://zarina.ru/')
+				img(src='/images/festival/logo_zarins.svg')
+			a(target='_blank' href='http://www.freedomwelcome.com/')
+				img(src='/images/festival/logo_freedom.png')
+			//- a(target='_blank' href='http://www.madwave.ru/ru')
+				img(src='/images/festival/logo_madwave.svg')
+
+	section#party.festival__close.festival__party
+		.container
+			h2.festival__close-title Дизайн-вечеринка
+			p.festival__party-time 19:00–23:00
+			.festival__close-item.festival__party-item
+				img(src='/images/festival/party_1.svg')
+				p Бар и неформальное<br>общение
+			.festival__close-item.festival__party-item
+				img(src='/images/festival/party_2.svg')
+				p Диджей-сет
+				br
+			.festival__close-item.festival__party-item
+				img(src='/images/festival/party_3.svg')
+				p Модный показ
+				br
+			.festival__close-item.festival__party-item
+				img(src='/images/festival/party_4.svg')
+				p Сюрпризы<br>и подарки
+				
+	section#participation.festival__buy
+		.container
+			h2.festival__buy-title Участие в фестивале
+			.festival__buy-row
+				.festival__buy-ticket
+					.festival__buy-ticket-who Входной
+					p.festival__buy-ticket-what.
+						Форум
+						<br>Ярмарка вакансий
+						<br>Дизайн-вечеринка
+					p.festival__buy-ticket-price 450 ₽
+					img.festival__buy-ticket-code(src='/images/festival/code.svg')
+					a.festival__btn.festival__btn--gold.festival__btn--ticket-buy(href='https://radario.ru/events/21745/tickets' target='_blank') Купить билет
+				
+				.festival__buy-ticket
+					.festival__buy-ticket-who Студенческий
+					p.festival__buy-ticket-what.
+						Форум
+						<br>Ярмарка вакансий
+						<br>Дизайн-вечеринка
+					p.festival__buy-ticket-price 350 ₽
+					img.festival__buy-ticket-code(src='/images/festival/code.svg')
+					a.festival__btn.festival__btn--gold.festival__btn--ticket-buy(href='https://radario.ru/events/21745/tickets' target='_blank') Купить билет
+					
+				.festival__buy-ticket
+					.festival__buy-ticket-who Тусовщик
+					p.festival__buy-ticket-what.
+						Ярмарка вакансий
+						<br>Дизайн-вечеринка
+					p.festival__buy-ticket-price 100 ₽
+					img.festival__buy-ticket-code(src='/images/festival/code.svg')
+					a.festival__btn.festival__btn--gold.festival__btn--ticket-buy(href='https://radario.ru/events/21745/tickets' target='_blank') Купить билет
+					
+				.festival__buy-ticket
+					.festival__buy-ticket-who Соискатель
+					p.festival__buy-ticket-what Ярмарка вакансий
+					p.festival__buy-ticket-price Бесплатно
+					img.festival__buy-ticket-code(src='/images/festival/code.svg')
+					a.festival__btn.festival__btn--gold.festival__btn--ticket-buy(href='https://radario.ru/events/21745/tickets' target='_blank') Получить билет
+	#where.festival__map
+		#festival__map
+		.container
+			h3.festival__map-title Санкт-Петербург, Московский проспект, д. 107, корп. 5<br>Пространство «Скороход», 12 апреля, 11:00–23:00 
+	script(src="//maps.googleapis.com/maps/api/js?v=3.exp")
+	script.
+		var map;
+		var brooklyn = new google.maps.LatLng(59.890791, 30.317108);		
+		var MY_MAPTYPE_ID = 'custom_style';
+
+		function initialize() {
+		
+			var featureOpts = [
+				{
+					stylers: [
+						{ gamma: 1 },
+						{ lightness: -5 },
+						{ hue: "#CDCDCD" },
+						{ saturation: -100 }
+					]
+				}
+			];
+			
+			var mapOptions = {
+				zoom: 16,
+				center: brooklyn,
+				scrollwheel: false,
+				mapTypeControl: false,
+				mapTypeControlOptions: {
+					mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+				},
+				mapTypeId: MY_MAPTYPE_ID
+			};
+		
+			map = new google.maps.Map(document.getElementById('festival__map'),
+					mapOptions);
+		
+			var styledMapOptions = {
+				name: 'Custom Style'
+			};
+		
+			var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+		
+			map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+			var marker1 = new google.maps.Marker({
+				position: new google.maps.LatLng(59.890791, 30.317108),
+				map: map,
+				icon: new google.maps.MarkerImage(
+					'images/map.svg',
+					new google.maps.Size(31,42),
+					new google.maps.Point(0,0)
+					//- new google.maps.Point(15,35)
+				),
+				title: "Фестиваль «Игры дизайнеров»",
+				zIndex: 3
+			});
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);

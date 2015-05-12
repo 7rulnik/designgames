@@ -13,7 +13,7 @@ mixin team(winner, team, scores)
 			td
 			td
 			td
-			td= scores
+			td.results__total= scores
 	else
 		tr.results__loser
 			td
@@ -27,18 +27,22 @@ mixin team(winner, team, scores)
 block content
 	section.case
 		.container
-			h1.case__heading Результаты 1-го этапа секции «Интерфейсы»
+			.row
+				h1.case__heading.results__title Результаты 1-го этапа секции «Интерфейсы»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/interface-second-stage.html') Результаты 2-го этапа
+					a.results__change-stage-link(href='/results/interface-final.html') Результаты финала
 			table.results
 				thead
 					tr
 						td.results__winner.results__winner--none
-						td.results__team.results__header Команда
-						td Креативность
-						td Исполнение
-						td Презентация
-						td Соответствие ЦА
-						td Глубина анализа
-						td.results__header Общая оценка
+						td.results__team--header.results__header Команда
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre>
+						td.results__total.results__header Общая оценка
 				tbody
 					+team(true, '1. GUM', '10')
 					+team(true, '2. Гордые и худые', '9,25')

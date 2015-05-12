@@ -1,24 +1,33 @@
+//- block var
+//- 	- var title = 'Архитектура и интерьер - загрузка работы'
+//- extends ../../layout/default.jade
+//- block header
+//- 	include ../../partials/navbar.jade
+//- block content
+//- 	section.case
+//- 		.container
+//- 			h1.case__heading Загрузка вашей работы — секция «Архитектура и интерьер»
+//- 			form.case__form
+//- 				input(type="text" placeholder="Название команды" required class="contacts__input footer__input case__input--team")
+//- 				input(type="email" placeholder="Ваша почта" required class="contacts__input footer__input case__input--email")
+//- 				p Загрузите архив на любой файловый хостинг и прикрепите ссылку на него в поле ниже.
+//- 				input(type="text" placeholder="Ссылка на архив" required class="contacts__input footer__input case__input--link")
+//- 				br
+//- 				input(type="submit" value="Отправить на проверку" disabled class="contacts__submit case__submit")
+//- 			hr.case__divider
+//- 			h3.case__curator Куратор секции
+//- 			p Возник вопрос? Обращайтесь к куратору вашей секции.
+//- 			img.curator__img(src='/images/people/8.png')
+//- 			.curator__who
+//- 				p.curator__name.curator__name--case Лера Бесподобная
+//- 				a.curator__email(href='mailto: valeriya.v@designgames.ru') valeriya.v@designgames.ru
 block var
 	- var title = 'Архитектура и интерьер - загрузка работы'
 extends ../../layout/default.jade
 block header
 	include ../../partials/navbar.jade
 block content
-	section.case
+	section.soon
 		.container
-			h1.case__heading Загрузка вашей работы — секция «Архитектура и интерьер»
-			form.case__form
-				input(type="text" placeholder="Название команды" required class="contacts__input footer__input case__input--team")
-				input(type="email" placeholder="Ваша почта" required class="contacts__input footer__input case__input--email")
-				p Загрузите архив на любой файловый хостинг и прикрепите ссылку на него в поле ниже.
-				input(type="text" placeholder="Ссылка на архив" required class="contacts__input footer__input case__input--link")
-				br
-				input(type="submit" value="Отправить на проверку" disabled class="contacts__submit case__submit")
-			hr.case__divider
-			h3.case__curator Куратор секции
-			p Возник вопрос? Обращайтесь к куратору вашей секции.
-			img.curator__img(src='/images/people/8.png')
-			.curator__who
-				p.curator__name.curator__name--case Лера Бесподобная
-				a.curator__email(href='mailto: valeriya.v@designgames.ru') valeriya.v@designgames.ru
-	
+			img(src='/images/maintenance.svg')
+			p.soon__text Приём работ окончен

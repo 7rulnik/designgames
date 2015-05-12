@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="35px" viewBox="0 0 40 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="О-чемпионате-(дизайн)" sketch:type="MSArtboardGroup" transform="translate(-1068.000000, -4065.000000)" fill="#C7A95F">
+            <g id="4_block" sketch:type="MSLayerGroup" transform="translate(0.000000, 3674.000000)">
+                <g id="content" transform="translate(546.000000, 216.000000)" sketch:type="MSShapeGroup">
+                    <g id="3" transform="translate(475.000000, 175.000000)">
+                        <path d="M58.6,21.7777778 L58.6,9.72222222 L51,9.72222222 C48.8,9.72222222 47,11.4722222 47,13.6111111 L47,25.2777778 C47,27.4166667 48.8,29.1666667 51,29.1666667 L53,29.1666667 L53,35 L59,29.1666667 L69,29.1666667 C71.2,29.1666667 73,27.4166667 73,25.2777778 L73,21.7388889 C72.872,21.7661111 72.736,21.7797222 72.6,21.7797222 L58.6,21.7797222 L58.6,21.7777778 L58.6,21.7777778 Z M83,0 L65,0 C62.8,0 61,1.75 61,3.88888889 L61,19.4444444 L75,19.4444444 L81,25.2777778 L81,19.4444444 L83,19.4444444 C85.2,19.4444444 87,17.6963889 87,15.5555556 L87,3.88888889 C87,1.75 85.2,0 83,0 L83,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -8,37 +8,41 @@ mixin team(winner, team, scores)
 		tr
 			td.results__winner
 			td.results__team= team
-			td
-			td
-			td
-			td
-			td
-			td= scores
+			td <pre>         </pre> 
+			td <pre>         </pre> 
+			td <pre>         </pre> 
+			td <pre>         </pre> 
+			td <pre>         </pre>
+			td.results__total= scores
 	else
 		tr.results__loser
 			td
-			td.results__team= team
+			td.results__team.results__team--loser= team
 			td
 			td
 			td
 			td
 			td
-			td= scores
+			td.results__total= scores
 block content
 	section.case
 		.container
-			h1.case__heading Результаты 1-го этапа секции «Брендинг»
+			.row
+				h1.case__heading.results__title Результаты 1-го этапа секции «Брендинг»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/branding-second-stage.html') Результаты 2-го этапа
+					a.results__change-stage-link(href='/results/branding-final.html') Результаты финала
 			table.results
 				thead
 					tr
 						td.results__winner.results__winner--none
-						td.results__team.results__header Команда
-						td Креативность
-						td Исполнение
-						td Презентация
-						td Соответствие ЦА
-						td Глубина анализа
-						td.results__header Общая оценка
+						td.results__team--header.results__header Команда
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre> 
+						td <pre>         </pre>
+						td.results__total.results__header Общая оценка
 				tbody
 					+team(true, '1. Изюм', '13,33')
 					+team(true, '2. Жена Дали', '13')

@@ -1,0 +1,52 @@
+block var
+	- var title = 'Результаты финала секции «Дизайн костюма»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты финала секции «Дизайн костюма»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/costume.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/costume-second-stage.html') Результаты 2-го этапа
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Видеовизитка
+						td Презентация 2-го этапа
+						td Презентация 3-го этапа
+						td Конкурс капитанов
+						td.results__total.results__header Общий балл
+				tbody
+					+team(true, '1. Sidera<br>(Санкт-Петербург)', '4,4',	'16,4',	'12,8',	'0,2', '33,8')
+					+team(true, '2. DARK CYAN<br>(Санкт-Петербург)', '4',	'15,8',	'13,8',	'0,1',	'33,7')
+					+team(true, '3. #295<br>(Екатеринбург)', '4', '16',	'13,5',	'0,1',	'33,6')
+					
+					+team(false, '4. Фэшн на Урале не дремлет<br>(Екатеринбург)', '4',	'15,4',	'12,4',	'0,3',	'32,1')
+					+team(false, '5. Кипиш Мод<br>(Екатеринбург)', '3,4',	'13,6',	'14,2',	'0,4',	'31,6')
+					+team(false, '6. IB4<br>(Киров)', '3,6', '16,4', '9,8', '0,7', '30,5')				

@@ -1,0 +1,454 @@
+#festival__map {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  /*   position: relative;
+z-index: 5; */
+}
+.festival {
+  &__map {
+    height: 500px;
+    position: relative;
+    .text-center;
+  }
+  &__map-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #232323;
+    margin-top: 40px;
+    line-height: 30px;
+  }
+  &__header {
+    background: url("../images/festival/bg_header.jpg") no-repeat center top;
+    height: 950px;
+    .text-center;
+  }
+  &__title {
+    font-size: 60px;
+    color: #fff;
+    line-height: 70px;
+    margin-top: 152px;
+    margin-bottom: 20px;
+    &-text {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  &__when {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 22px;
+    margin-bottom: 58px;
+  }
+  &__likely {
+    .center-block;
+    margin-bottom: 112px;
+  }
+  &__nav {
+    .list-unstyled;
+    .list-inline;
+    li + li a {
+      margin-left: 25px;
+    }
+    a {
+      .linkOrange();
+      .text-uppercase;
+      font-weight: 500;
+    }
+  }
+  &__timer {
+    font-weight: 400;
+    font-size: 23px;
+    color: #fff;
+    margin-top: 109px;
+    margin-bottom: 4px;
+    &-text {
+      /*       font-size: 14px;
+ */
+      color: #fff;
+    }
+  }
+  &__btn {
+    height: 58px;
+    line-height: 55px;
+    font-weight: 500;
+    display: inline-block;
+    .text-uppercase;
+    .text-center;
+    transition: all 0.3s ease-out;
+    &:hover {
+      transition: all 0s ease-out;
+      text-decoration: none;
+    }
+    &--white {
+      color: #fff;
+      border: 2px solid #fff;
+      &:hover {
+        color: #fff;
+        background: #c7a95f;
+        border: 2px solid #c7a95f;
+      }
+    }
+    &--gold {
+      color: #c7a95f;
+      border: 2px solid #c7a95f;
+      &:hover,
+      &:focus {
+        background: #c7a95f;
+        color: #fff;
+      }
+    }
+    &--black {
+      color: #000;
+      border: 2px solid #000;
+      &:hover,
+      &:focus {
+        background: #c7a95f;
+        color: #fff;
+      }
+    }
+    &--header {
+      width: 200px;
+      margin-top: 23px;
+    }
+    &--ticket {
+      width: 214px;
+      margin-top: 3px;
+      font-size: 14px;
+      &-buy {
+        font-size: 14px;
+        width: 176px;
+        position: absolute;
+        bottom: 30px;
+      }
+    }
+    &--presentation {
+      width: 230px;
+      margin-top: 34px;
+    }
+    &--navbar {
+      width: 221px;
+      height: 39px;
+      line-height: 5px !important;
+      margin-top: 14px;
+      margin-left: 15px;
+      &:hover {
+        background: #c7a95f !important;
+      }
+    }
+  }
+  &__about {
+    height: 618px;
+    padding-top: 68px;
+    .text-center;
+    p {
+      font-size: 16px;
+      color: #232323;
+      line-height: 30px;
+    }
+    &-divider {
+      border-top: 2px solid #d0d0d0;
+      width: 250px;
+      margin-top: 82px;
+      margin-bottom: 59px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+      color: #232323;
+      margin-bottom: 6px;
+    }
+    &-item {
+      display: inline-block;
+      margin-top: 62px;
+      & + & {
+        margin-left: 78px;
+      }
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__finals {
+    background: #232323;
+    height: 2106px;
+    padding-top: 49px;
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+      color: #fff;
+      margin-bottom: 6px;
+      .text-center;
+      & + p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: -11px;
+        .text-center;
+      }
+    }
+    &-divider {
+      border-top: 2px solid #383838;
+      width: 938px;
+      margin-top: 84px;
+    }
+  }
+  &__ticket {
+    width: 666px;
+    height: 296px;
+    float: left;
+    padding-top: 51px;
+    padding-left: 45px;
+    a {
+      .linkOrange();
+    }
+    &--branding {
+      background: url("../images/festival/ticket_branding.png") no-repeat;
+    }
+    &--interface {
+      background: url("../images/festival/ticket_interface.png") no-repeat;
+    }
+    &--costume {
+      background: url("../images/festival/ticket_costume.png") no-repeat;
+    }
+    &--architecture {
+      background: url("../images/festival/ticket_architecture.png") no-repeat;
+    }
+    &-row {
+      color: #fff;
+      .clearfix;
+      margin-top: 53px;
+      padding-left: 29px;
+    }
+    &-registration {
+      float: left;
+      font-size: 16px;
+      line-height: 25px;
+      padding-left: 29px;
+      margin-top: 61px;
+    }
+    &-defense {
+      color: #fff;
+      margin-left: 44px;
+      margin-top: 10px;
+      font-size: 16px;
+      a {
+        .linkOrange();
+      }
+    }
+    &-date {
+      display: inline-block;
+      margin-top: 8px;
+      margin-bottom: 18px;
+      & + & {
+        margin-left: 40px;
+      }
+    }
+    &-place {
+      line-height: 22px !important;
+    }
+    p {
+      color: #b7b8b9;
+      line-height: 16px;
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        line-height: 19px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+  &__close {
+    height: 700px;
+    background: url("../images/festival/bg_close.jpg") no-repeat center top;
+    .text-center;
+    color: #fff;
+    padding-top: 197px;
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+    }
+    &-where {
+      font-size: 30px;
+    }
+    &-item {
+      display: inline-block;
+      margin-top: 85px;
+      vertical-align: top;
+      & + & {
+        margin-left: 80px;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  &__forum {
+    /* height: 1625px; */
+    height: 2055px;
+    color: #232323;
+    padding-top: 50px;
+    .text-center;
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+      margin-bottom: 6px;
+    }
+    &-date {
+      color: #ad8b39;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    &-about {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 17px;
+      margin-bottom: 83px;
+    }
+    &-people {
+      width: 33.33333%;
+      float: left;
+      padding: 0 3%;
+    }
+    &-name {
+      margin-top: 15px;
+      margin-bottom: 1px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    &-who {
+      line-height: 16px;
+    }
+    &-divider {
+      width: 100px;
+      border-top: 2px solid #d0d0d0;
+      /* margin-top: 26px; */
+      margin-bottom: 14px;
+    }
+    &-theme {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &-presentation {
+      width: 980px;
+      height: 350px;
+      background: url("../images/festival/bg_presentaion.png") no-repeat;
+      margin-top: 70px;
+      /* padding-top: 89px; */
+      padding-top: 135px;
+      &-text {
+        font-weight: 400;
+        font-size: 30px;
+        color: #fff;
+        line-height: 35px;
+      }
+    }
+  }
+  &__vacancy {
+    height: 545px;
+    color: #fff;
+    background: #232323;
+    .text-center;
+    padding-top: 50px;
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+      margin-bottom: 6px;
+    }
+    &-time {
+      font-weight: 400;
+      color: #c7a95f;
+      font-size: 30px;
+    }
+    &-about {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 17px;
+      margin-bottom: 72px;
+    }
+    a {
+      opacity: 0.65;
+      display: inline-block;
+      margin-bottom: 44px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    a + a {
+      margin-left: 86px;
+    }
+  }
+  &__party {
+    .text-center;
+    color: #fff;
+    background: url("../images/festival/bg_party.jpg");
+    height: 700px;
+    &-time {
+      font-weight: 400;
+      color: #c7a95f;
+      font-size: 30px;
+      margin-top: -3px;
+      margin-bottom: 13px;
+    }
+    &-item {
+      & + & {
+        margin-left: 120px;
+      }
+    }
+  }
+  &__buy {
+    height: 660px;
+    padding-top: 50px;
+    &-row {
+      width: 970px;
+      .clearfix;
+      .center-block;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 40px;
+      color: #232323;
+      margin-bottom: 76px;
+      .text-center;
+    }
+    &-ticket {
+      width: 220px;
+      height: 368px;
+      color: #fff;
+      background: #232323;
+      border-radius: 3px;
+      float: left;
+      padding-top: 27px;
+      padding-left: 22px;
+      position: relative;
+      & + & {
+        margin-left: 30px;
+      }
+      &-who {
+        font-weight: 400;
+        font-size: 24px;
+      }
+      &-what {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+      &-price {
+        font-weight: 400;
+        font-size: 30px;
+        position: absolute;
+        bottom: 164px;
+      }
+      &-code {
+        position: absolute;
+        bottom: 118px;
+      }
+    }
+  }
+}

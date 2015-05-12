@@ -1,0 +1,52 @@
+block var
+	- var title = 'Результаты финала секции «Архитектура и интерьер»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team!= team
+			td= score1
+			td= score2
+			td= score3
+			//- td= score4
+			//- td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser!= team
+			td= score1
+			td= score2
+			td= score3
+			//- td= score4
+			//- td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты финала секции «Архитектура и интерьер»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/architecture.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/architecture-second-stage.html') Результаты 2-го этапа
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Видеовизитка
+						td Презентация 2-го этапа
+						td Презентация 3-го этапа
+						//- td Конкурс капитанов
+						td.results__total.results__header Общий балл
+				tbody
+					+team(true, '1. Deadline<br>(Калининград)', '5,75', '20,25', '15,75', '41,75')
+					+team(true, '2. A4<br>(Новосибирск)', '4,5',	'19',	'17,25',	'40,75')
+					+team(true, '3. Archi-T<br>(Санкт-Петербург)', '4,5',	'21,25',	'14,75',	'40,5')
+					
+					+team(false, '4. KRTN<br>(Краснодар)', '5,75',	'18,75',	'13,75',	'38,25')
+					+team(false, '5. CO&CO<br>(Челябинск)', '3,25',	'19',	'13,25',	'35,5')
+					+team(false, '6. UnicornPower<br>(Витебск)', '3',	'17,75',	'9,75',	'30,5')

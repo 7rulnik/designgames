@@ -1,0 +1,71 @@
+block var
+	- var title = 'Результаты 2-го этапа секции «Архитектура и интерьер»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, score5, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты 2-го этапа секции «Архитектура и интерьер»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/architecture.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/architecture-final.html') Результаты финала
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Креативность
+						td Исполнение
+						td Презентация
+						td Соответствие<br>ЦА
+						td Глубина<br>анализа
+						td.results__total.results__header Общая<br>оценка
+				tbody
+					+team(true, '1. Archi-T', '2', '2', '2,5', '2,25', '2,5', '11,25')
+					+team(true, '2. UnicornPower', '2,25', '2,25', '2,25', '2', '1,5', '10,25')
+					+team(true, '3. A4', '2,25', '2,25', '2,25', '2', '1,5', '10,25')
+					+team(true, '4. CO&CO', '2', '2', '2,5', '2', '1,5', '10')
+					+team(true, '5. Deadline', '1,5', '2,25', '2,25', '2', '1,75', '9,75')
+					+team(true, '6. KRTN', '2,5', '1,5', '1,75', '1,75', '1,5', '9')
+					
+					+team(false, '7. Ё', '1,75', '2', '1,75', '1,75', '1,25', '8,5')
+					+team(false, '8. Three points ', '1,5', '2', '2', '1,75', '1,25', '8,5')
+					+team(false, '9. Power mind', '1,75', '1,75', '1,75', '1,75', '1,25', '8,25')
+					+team(false, '10. KVADRAT group', '2,25', '1,5', '1,75', '1,5', '1', '8')
+					
+					+team(false, '11. LOFT', '1,75', '1,25', '1,5', '1,75', '1,25', '7,5')
+					+team(false, '12. VAM', '2', '1,75', '1,5', '1', '1,25', '7,5')
+					+team(false, '13. Алабастр', '1,5', '1,75', '1,75', '1,25', '1,25', '7,5')
+					+team(false, '14. Фокус', '1,75', '1,5', '1,25', '1,5', '1,25', '7,25')
+					+team(false, '15. Flipside', '1,25', '1,5', '1', '1,75', '1,75', '7,25')
+					+team(false, '16. AMVO', '2', '1,25', '1', '1,25', '1,5', '7')
+					+team(false, '17. NBOX', '1,75', '1,5', '1,25', '1,5', '1', '7')
+					+team(false, '18. Арт_Подход', '1,5', '1,25', '1,25', '1,5', '1,25', '6,75')
+					+team(false, '19. Asimptota.inc', '1,5', '1', '1,25', '1,75', '1,25', '6,75')					
+					+team(false, '20. Хай-тек', '1,25', '1,25', '1,25', '1,5', '1,25', '6,5')
+					
+					+team(false, '21. Time of art', '1', '1,25', '1,5', '1,5', '1,25', '6,5')
+					+team(false, '22. BORSHCH', '1,25', '1,25', '1', '1,5', '1,25', '6,25')

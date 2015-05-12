@@ -5,10 +5,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 0 && (!$menu.hasClass('navbar--scroll'))) {
       $menu.addClass('navbar--scroll');
+      $('.festival__btn--navbar').addClass('festival__btn--black');
 
     } else if ($(this).scrollTop() <= 0 && $menu.hasClass('navbar--scroll')) {
       $menu.removeClass('navbar--scroll');
-
+      $('.festival__btn--navbar').removeClass('festival__btn--black');
     }
   }); //scroll
 
@@ -36,5 +37,12 @@ $(document).ready(function() {
       $buttonGroup.find('.viewers__filter--active').removeClass('viewers__filter--active');
       $(this).addClass('viewers__filter--active');
     });
+  });
+
+  $(".festival__nav a, .festival__btn--header").click(function() {
+    var a = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(a).offset().top - 68
+    }, 700)
   });
 });

@@ -1,0 +1,52 @@
+block var
+	- var title = 'Результаты финала секции «Брендинг»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты финала секции «Брендинг»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/branding.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/branding-second-stage.html') Результаты 2-го этапа
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Видеовизитка
+						td Презентация 2-го этапа
+						td Презентация 3-го этапа
+						td Конкурс капитанов
+						td.results__total.results__header Общий балл
+				tbody
+					+team(true, '1. North designer<br>(Северодвинск)', '5,25', '19,25', '18,75', '0,875', '44,125')
+					+team(true, '2. ТрИугольник<br>(Санкт-Петербург)', '5,25',	'20',	'16,75', '0,75', '42,75')
+					+team(true, '3. D-Geeks<br>(Санкт-Петербург)', '5',	'19,5',	'16,25',	'0,625',	'41,375')
+					
+					+team(false, '4. ИЗЮМ<br>(Екатеринбург)', '5,5',	'19,75',	'15',	'0,5',	'40,75')
+					+team(false, '5. WE<br>(Санкт-Петербург)', '4,5',	'17',	'16,5',	'0,875',	'38,875')
+					+team(false, '6. Битый пиксель<br>(Иркутск)', '4,75',	'19,25',	'14,25',	'0,375',	'38,625')		

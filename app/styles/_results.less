@@ -2,17 +2,34 @@
   width: 980px;
   .text-center;
   thead {
-    color: #1f1f1f;
+    color: #3f3f3f !important;
   }
   td {
     height: 72px;
     border-bottom: 2px solid rgba(236,236,236,0.05);
-  }
-  &__header, &__loser {
     color: #3f3f3f;
+    font-weight: 400;
+  }
+  &__header,
+  &__loser {
+    color: #3f3f3f;
+    &__team {
+      color: #fff !important;
+    }
   }
   &__team {
     .text-left;
+    color: #fff !important;
+    &--loser {
+      color: #3f3f3f !important;
+    }
+    &--header {
+      .text-left;
+      color: #fff !important;
+    }
+  }
+  &__total {
+    color: #fff !important;
   }
   &__winner {
     background: url("../images/winner.svg") no-repeat;
@@ -20,6 +37,18 @@
     width: 60px;
     &--none {
       background: none;
+    }
+  }
+  &__title {
+    float: left;
+  }
+  &__change-stage {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    .linkOrange;
+    &-link + &-link {
+      margin-left: 15px;
     }
   }
 }

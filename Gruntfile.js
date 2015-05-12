@@ -213,7 +213,7 @@ module.exports = function(grunt) {
             '<%= config.dist %>/*.{ico,png}',
             '<%= config.dist %>/files/**/*',
             // '<%= config.dist %>/case/**/*',
-            // '!<%= config.dist %>/case/index.html'
+            '!<%= config.dist %>/images/map.svg'
           ]
         }
       }
@@ -277,14 +277,15 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/**/*.{webp,svg,png}',
+            'images/**/*.{webp,svg,png,pdf}',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*',
             'doc/**',
             'static/**',
             'scripts/**/*.php',
             'files/**',
-            'json/**'
+            'json/**',
+            '.htaccess'
           ]
         }, {
           expand: true,

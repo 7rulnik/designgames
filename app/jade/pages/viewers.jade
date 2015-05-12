@@ -7,11 +7,11 @@ block header
 block content
 	section.viewers
 		.container
-			#filters
+			//- #filters
 				button.viewers__link.viewers__filter.viewers__filter--active(data-filter=".viewers__item--willbe") Будущие лекции
 				button.viewers__link.viewers__filter(data-filter=".viewers__item--complete") Прошедшие
 				button.viewers__link.viewers__filter(data-filter="*") Все
-			hr.case__divider.viewers__divider2
+			//- hr.case__divider.viewers__divider2
 			.lections
 				section.viewers__item.viewers__item--complete
 					.viewers__photo.viewers__photo--1
@@ -156,10 +156,12 @@ block content
 								<br>нужно применять на данном этапе (плюсы/минусы).
 						.viewers__when
 							date.viewers__date.viewers__date--complete Лекция завершена
-							//- a.viewers__link.viewers__link--map(href='https://www.youtube.com/watch?v=vOXeo390Uds&feature=youtu.be' target='_blank') Видеозапись с мероприятия<br>
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://www.youtube.com/watch?v=Idu-qIdMseA&feature=youtu.be' target='_blank') Видеозапись с мероприятия
 							br
 							img(src='/images/viewers/write.svg')
-							a.viewers__link.viewers__link--map(href='http://www.gildfamily.ru/blog/protsess_proektirovaniya_interfeysa:_zachem_nuzhen_etap_analiza' target='_blank') Обзор лекции на сайте «Гильдии»
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/protsess_proektirovaniya_interfeysa:_zachem_nuzhen_etap_analiza' target='_blank') Обзор лекции на сайте «Гильдии»
 				
 				
 				section.viewers__item.viewers__item--complete
@@ -186,11 +188,12 @@ block content
 								<br>после того, как вы крепко будете стоять на ногах. 
 						.viewers__when
 							date.viewers__date.viewers__date--complete Лекция завершена
-							//- p.viewers__address Санкт-Петербург, Вознесенский проспект 44-46
-							//- a.viewers__link.viewers__link--map(href='http://maps.yandex.ru/?um=lhkLDePa8oJA4fQDKWmp2yL6aM0_uptv&ll=30.308187%2C59.920822&spn=0.005043%2C0.001613&z=18&l=map' target='_blank') Посмотреть на карте
-							//- p.viewers__reg Вход строго по спискам — требуется регистрация на мероприятие
-							//- a.viewers__btn(href='https://docs.google.com/forms/d/1t1FNwAapjkUOWHZERocUR-658zmhnBEvcLvIZgh4d2w/viewform' target='_blank') Зарегистрироваться
-				
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://youtu.be/aR1iLNMouJY' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/kak_otkryt_svoyu_studiyu_dizayna_intererov' target='_blank') Обзор лекции на сайте «Гильдии»
 				
 				section.viewers__item.viewers__item--willbe
 					.viewers__photo.viewers__photo--6
@@ -215,9 +218,10 @@ block content
 								<br>что же такое история в интерфейсе? Почему надо её рассказывать?
 								<br>Как историю сделать убедительной? Как презентовать результат?
 						.viewers__when
-							date.viewers__date 30 марта, 18:00
-							p.viewers__address Санкт-Петербург, Большая морская 18, 436 аудитория
-							a.viewers__link.viewers__link--map(href='http://maps.yandex.ru/?um=lhkLDePa8oJA4fQDKWmp2yL6aM0_uptv&ll=30.308187%2C59.920822&spn=0.005043%2C0.001613&z=18&l=map' target='_blank') Посмотреть на карте
-							p.viewers__reg Вход строго по спискам — требуется регистрация на мероприятие
-							a.viewers__btn(href='https://docs.google.com/forms/d/1Qy35qa7sD57xbaF0sR_7vHPzgiMzr3H_tD3lXAfcHd4/viewform' target='_blank') Зарегистрироваться
-	
+							date.viewers__date.viewers__date--complete Лекция завершена
+							br
+							img(src='/images/viewers/play.svg')
+							a.viewers__link(href='https://www.youtube.com/watch?v=1hHHT0u00BU&feature=youtu.be' target='_blank') Видеозапись с мероприятия
+							br
+							img(src='/images/viewers/write.svg')
+							a.viewers__link.viewers__link--review(href='http://www.gildfamily.ru/blog/proektirovanie_istoriy_v_interfeysakh' target='_blank') Обзор лекции на сайте «Гильдии»	

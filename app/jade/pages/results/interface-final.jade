@@ -1,0 +1,52 @@
+block var
+	- var title = 'Результаты финала секции «Интерфейсы»'
+extends ../../layout/default.jade
+block header
+	include ../../partials/navbar.jade
+mixin team(winner, team, score1, score2, score3, score4, scores)
+	if winner
+		tr
+			td.results__winner
+			td.results__team!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td.results__total= scores
+	else
+		tr.results__loser
+			td
+			td.results__team.results__team--loser!= team
+			td= score1
+			td= score2
+			td= score3
+			td= score4
+			//- td= score5
+			td= scores
+block content
+	section.case
+		.container
+			.row
+				h1.case__heading.results__title Результаты финала секции «Интерфейсы»
+				.results__change-stage
+					a.results__change-stage-link(href='/results/interface.html') Результаты 1-го этапа
+					a.results__change-stage-link(href='/results/interface-second-stage.html') Результаты 2-го этапа
+			table.results
+				thead
+					tr
+						td.results__winner.results__winner--none
+						td.results__team--header.results__header Команда
+						td Видеовизитка
+						td Презентация 2-го этапа
+						td Презентация 3-го этапа
+						td Конкурс капитанов
+						td.results__total.results__header Общий балл
+				tbody
+					+team(true, '1. Арктика<br>(Москва)', '3,4', '17,4', '15,2',	'1,8', '37,8')
+					+team(true, '2. Arax<br>(Москва)', '4,6', '15', '16', '1,4', '37')
+					+team(true, '3. GUM<br>(Санкт-Петербург)', '4,2', '15,6', '15,4', '1,4', '36,6')
+					
+					+team(false, '4. Люди, которые сразу<br>(Москва)', '3,2', '14,8', '15,8', '1,8', '35,6')
+					+team(false, '5. Own-Style<br>(Санкт-Петербург)', '3,8', '15,4', '11,6', '1,8', '32,6')
+					+team(false, '6. BreadCrumbs<br>(Санкт-Петербург)', '4',	'13',	'12',	'1,6',	'30,6')
